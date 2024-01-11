@@ -27,16 +27,18 @@
 
   <footer class="footer items-center p-4 bg-black text-neutral-content border-t-2 pt-5">
     <div class="items-center grid-flow-col flex flex-col">
-      <p class="text-blue-200">Copyright © 2023 CoreNion</p><a class="link text-white" href="/privacy.html">
+      <p class="text-blue-200">
+        Copyright © 2024 CoreNion
+      </p>
+      <nuxt-link class="link text-white" to="/privacy">
         Site's Privacy Policy
-      </a>
+      </nuxt-link>
     </div>
     <div class="grid-flow-col gap-4 place-self-center justify-self-end items-center">
       <span class="font-bold text-blue-200">Check my accounts!:</span>
       <a href="https://github.com/CoreNion">
-        <img class="h-9" src="../assets/sns/x.svg"></a><a href="https://twitter.com/CoreiNion">
-        <img class="h-9" src="../assets/sns/github.svg">
-      </a>
+        <img class="h-9" src="../assets/sns/x.svg"></a>
+        <a href="https://twitter.com/CoreiNion"><img class="h-9" src="../assets/sns/github.svg"></a>
     </div>
   </footer>
 </template>

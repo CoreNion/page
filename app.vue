@@ -30,5 +30,11 @@ watch(
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
-  <CookieControl locale="ja" />
+  <CookieControl locale="ja">
+    <template #bar>
+      <h2>{{ $cookies.moduleOptions.localeTexts.ja?.bannerTitle }}</h2>
+      <p>{{ $cookies.moduleOptions.localeTexts.ja?.bannerDescription }}</p>
+      <NuxtLink class="link text-white font-bold" to="/privacy">プライバシーポリシー</NuxtLink>
+    </template>
+  </CookieControl>
 </template>

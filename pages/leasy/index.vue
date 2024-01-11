@@ -64,7 +64,7 @@ useSeoMeta({
                   rel="noreferrer">GitHub</a>
               </div>
             </div>
-            <a class="link" href="/leasy/privacy.html">プライバシーポリシー</a>
+            <nuxt-link class="link" to="./privacy">プライバシーポリシー</nuxt-link>
           </div>
         </div>
       </div>
