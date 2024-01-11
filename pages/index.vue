@@ -1,3 +1,34 @@
+<script setup lang="ts">
+useHead({
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/profile.svg',
+    },
+    {
+      rel: 'alternate icon',
+      type: 'image/ico',
+      href: '/favicon.ico',
+    }
+  ],
+});
+
+useSeoMeta({
+  title: 'About CoreNion',
+  ogTitle: 'About CoreNion',
+  description: "CoreNion / Yuta Obara's profile page.",
+  ogDescription: "CoreNion / Yuta Obara's profile page.",
+  ogImage: 'https://corenion.github.io/profile.png',
+  ogUrl: 'https://corenion.github.io/',
+  ogType: 'website',
+  ogSiteName: "CoreNion's Page",
+  twitterCard: 'summary',
+  twitterSite: '@CoreiNion',
+  twitterCreator: '@CoreiNion',
+});
+</script>
+
 <template>
   <div class="hero min-h-screen bg-slate-100">
     <div class="hero-content text-center">

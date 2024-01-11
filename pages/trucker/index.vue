@@ -1,3 +1,27 @@
+<script setup lang="ts">
+useHead({
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/trucker/icon.svg',
+    },
+  ],
+});
+useSeoMeta({
+  title: 'Open FileTrucker | CoreNion',
+  ogTitle: 'Open FileTrucker',
+  description: "どんな端末でも使える、サーバーを介さないファイル共有アプリ。",
+  ogDescription: "どんな端末でも使える、サーバーを介さないファイル共有アプリ。",
+  ogImage: 'https://corenion.github.io/trucker/ogp.png',
+  ogType: 'website',
+  ogSiteName: "CoreNion's Page",
+  twitterCard: 'summary_large_image',
+  twitterSite: '@CoreiNion',
+  twitterCreator: '@CoreiNion',
+});
+
+</script>
 <template>
   <div class="hero min-h-screen bg-gradient-to-r from-blue-100 to-emerald-100">
     <div class="hero-content text-center">

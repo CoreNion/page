@@ -1,4 +1,33 @@
 <script setup lang="ts">
+useHead({
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/leasy/icon.svg',
+    },
+    {
+      rel: 'alternate icon',
+      type: 'image/ico',
+      href: '/leasy/favicon.ico',
+    }
+  ],
+});
+useSeoMeta({
+  title: 'Leasy | CoreNion',
+  ogTitle: 'Leasy',
+  description: "「あなただけの」使いやすい暗記帳で学習しよう。",
+  ogDescription: "「あなただけの」使いやすい暗記帳で学習しよう。",
+  ogImage: 'https://corenion.github.io/leasy/ogp.png',
+  ogType: 'website',
+  ogSiteName: "CoreNion's Page",
+  twitterCard: 'summary_large_image',
+  twitterSite: '@CoreiNion',
+  twitterCreator: '@CoreiNion',
+  appleItunesApp: {
+    appId: '6448246576',
+  }
+})
 </script>
 
 <template>
