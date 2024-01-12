@@ -28,6 +28,7 @@ watch(
 
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
   <CookieControl locale="ja">
