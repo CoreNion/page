@@ -72,6 +72,12 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Create dotenv file
+        uses: SpicyPizza/create-envfile@v2
+        with:
+          NUXT_PUBLIC_GTAG_ID: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
+          NUXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GTAG_ID }}
+          NUXT_PUBLIC_SITE_URL: "https://corenion.github.io/page"
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
       - name: Upload artifact
