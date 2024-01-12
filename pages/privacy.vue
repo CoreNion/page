@@ -4,12 +4,12 @@ useHead({
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: '/profile.svg',
+      href: `${useRuntimeConfig().app.baseURL}profile.svg`,
     },
     {
       rel: 'alternate icon',
       type: 'image/ico',
-      href: '/favicon.ico',
+      href: `${useRuntimeConfig().app.baseURL}/favicon.ico`,
     }
   ],
 });
