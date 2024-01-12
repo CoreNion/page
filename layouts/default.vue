@@ -9,17 +9,17 @@
         </label>
 
         <ul class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52" tabindex="0">
-          <li><router-link to="/trucker/">FileTrucker</router-link></li>
-          <li><router-link to="/archivtter/">Archivtter</router-link></li>
-          <li><router-link to="/leasy/" class="rounded-xl">Leasy</router-link></li>
+          <li><NuxtLink to="/trucker/" no-prefetch>FileTrucker</NuxtLink></li>
+          <li><NuxtLink to="/archivtter/" no-prefetch>Archivtter</NuxtLink></li>
+          <li><NuxtLink to="/leasy/" no-prefetch>Leasy</NuxtLink></li>
         </ul>
       </div>
     </div>
-    <div class="flex-1"><router-link class="btn btn-ghost normal-case text-xl" to="/">CoreNion</router-link></div>
+    <div class="flex-1"><NuxtLink class="btn btn-ghost normal-case text-xl" to="/" no-prefetch>CoreNion</NuxtLink></div>
     <div class="max-sm:hidden ul menu menu-horizontal justify-end px-1">
-      <li><router-link class="rounded-xl" to="/trucker/">FileTrucker</router-link></li>
-      <li><router-link class="rounded-xl" to="/archivtter/">Archivtter</router-link></li>
-      <li><router-link class="rounded-xl" to="/leasy/">Leasy</router-link></li>
+      <li><NuxtLink to="/trucker/" no-prefetch>FileTrucker</NuxtLink></li>
+      <li><NuxtLink to="/archivtter/" no-prefetch>Archivtter</NuxtLink></li>
+      <li><NuxtLink to="/leasy/" no-prefetch>Leasy</NuxtLink></li>
     </div>
   </div>
 
@@ -30,9 +30,9 @@
       <p class="text-blue-200">
         Copyright © 2024 CoreNion
       </p>
-      <nuxt-link class="link text-white" to="/privacy">
+      <NuxtLink class="link text-white" to="/privacy">
         Site's Privacy Policy
-      </nuxt-link>
+      </NuxtLink>
     </div>
     <div class="grid-flow-col gap-4 place-self-center justify-self-end items-center">
       <span class="font-bold text-blue-200">Check my accounts!:</span>
