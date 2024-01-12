@@ -4,7 +4,7 @@ useHead({
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: '/trucker/icon.svg',
+      href: `${useRuntimeConfig().app.baseURL}trucker/icon.svg`,
     },
   ],
 });
