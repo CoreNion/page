@@ -4,12 +4,12 @@ interface Props {
   title: string,
   desc: string,
   repo: string,
-  pagePath: string | null,
+  pagePath?: string,
   newBadge: boolean 
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  pagePath: null,
+  pagePath: undefined,
   newBadge: false,
 });
 </script>
@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<Props>(), {
           :src="'https://img.shields.io/github/last-commit/' + props.repo">
       </p>
       <div class="card-actions justify-end">
-        <nuxt-link v-if="props.pagePath != null" class="btn btn-primary" :to="props.pagePath" no-prefetch>Open Site</nuxt-link>
+        <NuxtLink v-if="props.pagePath != undefined" class="btn btn-primary" :to="props.pagePath" no-prefetch>Open Site</NuxtLink>
         <a class="btn btn-secondary ml-1" :href="'https://github.com/' + props.repo">GitHub</a>
       </div>
     </div>
