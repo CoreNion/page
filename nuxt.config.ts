@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true
   },
+  app: {
+    "baseURL": process.env.BASE_URL || "/",
+  },
   runtimeConfig: {
     public: {
       googleSiteVerification: '',

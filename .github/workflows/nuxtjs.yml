@@ -37,7 +37,7 @@ jobs:
           fail_on_empty: true
           envkey_NUXT_PUBLIC_GTAG_ID: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
           envkey_NUXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.GTAG_ID }}
-          envkey_NUXT_PUBLIC_SITE_URL: "https://corenion.github.io/page"
+          envkey_NUXT_PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -81,6 +81,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+        env:
+          BASE_URL: ${{ vars.BASE_URL }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
