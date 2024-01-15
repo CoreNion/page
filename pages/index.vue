@@ -88,7 +88,7 @@ useSeoMeta({
             <br>
             N予備校でのプログラミング(Web系)講座での学習を生かし、開発しました。
           </IndexTl>
-          <IndexTl class="mb-10 ml-4" time="Oct 2021" title="Open FileTruckerの初版をリリース、「磁石祭 2022」に出展">
+          <IndexTl class="mb-10 ml-4" time="Apr 2022" title="Open FileTruckerの初版をリリース、「磁石祭 2022」に出展">
             今回はCoreNion独自の企画で<a class="link" href="https://nnn.ed.jp/school_festival/2022/plan/jqv9kyeuht-b/"
               target="_blank" rel="noreferrer">オンラインで出展</a>しました。
             <br>
