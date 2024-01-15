@@ -105,11 +105,17 @@ useSeoMeta({
             を行いました。
           </IndexTl>
           <IndexTl class="mb-10 ml-4" time="Apr 2023" title="Leasyの初版をリリース、「磁石祭 2023」に出展">
-            私が初めてアプリストアでリリースしたアプリです！<br>
+            私が初めてアプリストアでリリースしたアプリです！
+            <br>
             今回も
             <a class="link" href="https://nnn.ed.jp/school_festival/s2023/plan/#ex-okejlp_3-l8v" target="_blank"
               rel="noreferrer">オンラインで出展</a>
             しました。
+          </IndexTl>
+          <IndexTl class="mb-10 ml-4" time="Dec 2023" title="CP Dashboardを開発/公開">
+            キャンパスの時計やタイマー機能を改善しようと思い、それらを1画面にまとめたダッシュボードサイトを開発しました。
+            <br>
+            今回は電子工作への挑戦も兼ねて、Arudinoに接続されたセンサーからの温湿度や気圧データを表示する機能も追加しました。
           </IndexTl>
         </ol>
       </div>
