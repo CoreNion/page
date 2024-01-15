@@ -1,75 +1,15 @@
-# Nuxt 3 Minimal Starter
+# CoreNion's Page
+CoreNionのウェブサイトのソースコードです。
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 仕様
+- Nuxt 3 / TypeScript
 
-## Setup
+# ソースコードの使用条件
+このソースコードは、内部の動作などを理解したり学習する用途のために公開しています。ファイルは全て著作権法により保護されています。
 
-Make sure to install the dependencies:
+そのため、**このソースコードをそのまま使用してウェブサイトを作成すること(参考程度を超えて使用すること)を禁止します。**
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## OK
+- 独自のプロジェクトのために、ソースコードの数行をコピーしたり、参考にしたりすること
+## NG
+- このレポジトリをフォークし、GitHub Pagesなどで公開すること
