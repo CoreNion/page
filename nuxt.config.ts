@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   },
   app: {
     "baseURL": process.env.BASE_URL || "/",
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
   vue: {
     compilerOptions: {
