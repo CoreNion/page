@@ -36,7 +36,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative hero min-h-screen bg-gradient-to-r from-pink-100 to-teal-100 max-lg:z-0 shadow-lg shadow-pink-100">
+  <div class="hero min-h-screen bg-gradient-to-r from-pink-100 to-teal-100 max-lg:z-0 shadow-lg shadow-pink-100">
     <div class="min-w-full">
       <div class="m-auto max-w-screen-2xl flex flex-row items-center gap-4 flex-wrap-reverse">
         <div class="flex-1 hidden lg:block">
