@@ -27,7 +27,12 @@ useSeoMeta({
   appleItunesApp: {
     appId: '6448246576',
   }
-})
+});
+
+onMounted(() => {
+  // @ts-ignore
+  import('@microsoft/store-app-badge');
+});
 </script>
 
 <template>
