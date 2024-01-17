@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const siteURL = useSiteConfig().url;
+const baseURL = useRuntimeConfig().app.baseURL;
+
 useHead({
   link: [
     {
@@ -13,7 +16,8 @@ useSeoMeta({
   ogTitle: 'Open FileTrucker',
   description: "どんな端末でも使える、サーバーを介さないファイル共有アプリ。",
   ogDescription: "どんな端末でも使える、サーバーを介さないファイル共有アプリ。",
-  ogImage: 'https://corenion.github.io/trucker/ogp.png',
+  ogImage: `${siteURL}${baseURL}trucker/ogp.png`,
+  ogUrl: `${siteURL}${baseURL}trucker/`,
   ogType: 'website',
   ogSiteName: "CoreNion's Page",
   twitterCard: 'summary_large_image',

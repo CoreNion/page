@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const siteURL = useSiteConfig().url;
+const baseURL = useRuntimeConfig().app.baseURL;
+
 useHead({
   link: [
     {
@@ -17,6 +20,7 @@ useHead({
 useSeoMeta({
   title: 'プライバシーポリシー | Leasy',
   ogTitle: 'Leasy プライバシーポリシー',
+  ogUrl: `${siteURL}${baseURL}leasy/privacy`,
   ogType: 'website',
   ogSiteName: "CoreNion's Page",
   twitterCard: 'summary',

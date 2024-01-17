@@ -1,15 +1,18 @@
 <script setup lang="ts">
+const siteURL = useSiteConfig().url;
+const baseURL = useRuntimeConfig().app.baseURL;
+
 useHead({
   link: [
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: `${useRuntimeConfig().app.baseURL}leasy/icon.svg`,
+      href: `${baseURL}leasy/icon.svg`,
     },
     {
       rel: 'alternate icon',
       type: 'image/ico',
-      href: `${useRuntimeConfig().app.baseURL}leasy/favicon.ico`,
+      href: `${baseURL}leasy/favicon.ico`,
     }
   ],
 });
@@ -18,7 +21,8 @@ useSeoMeta({
   ogTitle: 'Leasy',
   description: "「あなただけの」使いやすい暗記帳で学習しよう。",
   ogDescription: "「あなただけの」使いやすい暗記帳で学習しよう。",
-  ogImage: 'https://corenion.github.io/leasy/ogp.png',
+  ogImage: `${siteURL}${baseURL}leasy/ogp.png`,
+  ogUrl: `${siteURL}${baseURL}leasy/`,
   ogType: 'website',
   ogSiteName: "CoreNion's Page",
   twitterCard: 'summary_large_image',

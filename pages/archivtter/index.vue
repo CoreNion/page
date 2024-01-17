@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const siteURL = useSiteConfig().url;
+const baseURL = useRuntimeConfig().app.baseURL;
+
 useHead({
   link: [
     {
@@ -13,7 +16,8 @@ useSeoMeta(
     title: 'Archivtter | CoreNion',
     ogTitle: 'Archivtter (アーカイブッター) - X(旧Twitter)での日付検索の支援ツール',
     description: "X(旧Twitter)で日付検索をする人のための支援ツールです。過去のツイートを簡単に検索できるリンクを簡単に発行できます。",
-    ogImage: 'https://corenion.github.io/archivtter/ogp.jpg',
+    ogImage: `${siteURL}${baseURL}archivtter/ogp.jpg`,
+    ogUrl: `${siteURL}${baseURL}archivtter/`,
     ogType: 'website',
     ogSiteName: "CoreNion's Page",
     twitterCard: 'summary_large_image',

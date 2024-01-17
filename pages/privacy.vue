@@ -1,15 +1,18 @@
 <script setup lang="ts">
+const siteURL = useSiteConfig().url;
+const baseURL = useRuntimeConfig().app.baseURL;
+
 useHead({
   link: [
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: `${useRuntimeConfig().app.baseURL}profile.svg`,
+      href: `${baseURL}profile.svg`,
     },
     {
       rel: 'alternate icon',
       type: 'image/ico',
-      href: `${useRuntimeConfig().app.baseURL}/favicon.ico`,
+      href: `${baseURL}/favicon.ico`,
     }
   ],
 });
@@ -17,6 +20,7 @@ useHead({
 useSeoMeta({
   title: "プライバシーポリシー | CoreNion's Page",
   ogTitle: "プライバシーポリシー | CoreNion's Page",
+  ogUrl: `${siteURL}${baseURL}privacy`,
   ogType: 'website',
   ogSiteName: "CoreNion's Page",
   twitterCard: 'summary',

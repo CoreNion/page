@@ -1,15 +1,18 @@
 <script setup lang="ts">
+const siteURL = useSiteConfig().url;
+const baseURL = useRuntimeConfig().app.baseURL;
+
 useHead({
   link: [
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: `${useRuntimeConfig().app.baseURL}profile.svg`,
+      href: `${baseURL}profile.svg`,
     },
     {
       rel: 'alternate icon',
       type: 'image/ico',
-      href: `${useRuntimeConfig().app.baseURL}favicon.ico`,
+      href: `${baseURL}favicon.ico`,
     }
   ],
 });
@@ -19,8 +22,8 @@ useSeoMeta({
   ogTitle: 'About CoreNion',
   description: "CoreNion / Yuta Obara's profile page.",
   ogDescription: "CoreNion / Yuta Obara's profile page.",
-  ogImage: 'https://corenion.github.io/profile.png',
-  ogUrl: 'https://corenion.github.io/',
+  ogImage: `${siteURL}${baseURL}profile.png`,
+  ogUrl: `${siteURL}${baseURL}`,
   ogType: 'website',
   ogSiteName: "CoreNion's Page",
   twitterCard: 'summary',
