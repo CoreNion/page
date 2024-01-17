@@ -1,6 +1,7 @@
 /file_trucker/ /trucker/ 301
+/Archivtter/ /archivtter/ 301
 /assets/profile.png /profile.png 301
 
 /cp-dashboard/ https://cpd.cnion.dev/
 /leasy/pwa/ https://leasy-pwa.cnion.dev/
-/Leasy/beta/ https://beta.leasy-pwa.cnion.dev/
+/Leasy/beta/ https://leasy-beta-pwa.cnion.dev/
