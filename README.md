@@ -3,6 +3,9 @@ CoreNionのウェブサイトのソースコードです。
 
 ## 仕様
 - Nuxt 3 / TypeScript
+- Cloudflare Pagesでホスティング
+  - ドメインもCloudflareを使用
+  - GitHub Actionsのビルドは現在使用していません、サイト生成はCloudflare Pagesの連携機能で行っています
 
 # ソースコードの使用条件
 このソースコードは、内部の動作などを理解したり学習する用途のために公開しています。ファイルは全て著作権法により保護されています。
