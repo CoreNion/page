@@ -61,7 +61,7 @@ useSeoMeta({
         <h1 class="text-4xl font-bold my-5"># Nion's Works</h1>
         <div class="flex flex-wrap justify-center">
           <IndexArch icon="cp-dashboard/icon.svg" title="CP Dashboard" desc="必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。"
-            repo="CoreNion/cp-dashboard" pagePath="https://corenion.github.io/cp-dashboard" :newBadge="true" />
+            repo="CoreNion/cp-dashboard" pagePath="https://cpd.cnion.dev/" :newBadge="true" />
           <IndexArch icon="leasy/icon.svg" title="Leasy" desc="「あなただけの」使いやすい暗記帳で学習しよう。" repo="CoreNion/Leasy"
             pagePath="/leasy" :newBadge="true" />
           <IndexArch icon="trucker/icon.svg" title="Open FileTrucker" desc="どんな端末でも使える、サーバーを介さないファイル共有アプリ。"

@@ -142,7 +142,7 @@ onMounted(() => {
             なお、バックアップ機能を利用し、後からアプリ版に学習データを移行することは可能です。
           </p>
           <div class="card-actions justify-end">
-            <a class="btn btn-secondary" href="https://corenion.github.io/leasy/pwa/">PWA版を開く</a>
+            <a class="btn btn-secondary" href="https://leasy-pwa.cnion.dev/">PWA版を開く</a>
           </div>
         </div>
       </div>
