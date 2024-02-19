@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const enableGA = enableGoogleAnalytics();
+</script>
+
 <template>
   <div class="min-h-screen grid grid-rows-[auto_1fr]">
     <div class="navbar bg-slate-300">
@@ -41,21 +45,49 @@
     <slot></slot>
 
     <footer class="footer items-center p-4 bg-black text-neutral-content ">
-      <aside class="items-center grid-flow-col">
-        <p>
+      <div class="w-full flex flex-row justify-stretch">
+        <p class="flex-1">
           <span>Copyright © 2024 CoreNion</span>
           <br>
           <NuxtLink class="link text-white mr-2" to="/privacy">Site's Privacy Policy</NuxtLink>
         </p>
-      </aside>
-      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a href="https://github.com/CoreNion">
-          <img class="h-9" src="../assets/sns/github.svg">
-        </a>
-        <a href="https://twitter.com/CoreiNion">
-          <img class="h-9" src="../assets/sns/x.svg">
-        </a>
-      </nav>
+        <p class="flex-1 flex flex-row justify-end items-center gap-4">
+          <a href="https://github.com/CoreNion">
+            <img class="h-9" src="../assets/sns/github.svg">
+          </a>
+          <a href="https://twitter.com/CoreiNion">
+            <img class="h-9" src="../assets/sns/x.svg">
+          </a>
+
+          <button class="btn btn-primary" onclick="analyticsModal.showModal()">
+            <Icon name="ic:outline-privacy-tip" size="25px"></Icon>
+          </button>
+        </p>
+      </div>
     </footer>
+
+    <dialog id="analyticsModal" class="modal">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg">解析データの設定</h3>
+        <p class="py-3">
+          当サイトでは、使用状況のデータの収集のために解析ツールなどを使用することがあります。
+          <br>
+          このデータは匿名で収集されており、個人を特定するものではありません。
+          <br>
+          <NuxtLink class="link" to="/privacy">プライバシーポリシー</NuxtLink>
+        </p>
+        <p>
+          <label class="label cursor-pointer">
+            <span class="label-text">Google Analytics</span>
+            <input type="checkbox" class="toggle" v-model="enableGA" />
+          </label>
+        </p>
+        <div class="modal-action">
+          <form method="dialog">
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
   </div>
 </template>

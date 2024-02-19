@@ -1,7 +1,6 @@
 <script setup lang="ts">
-const { grantConsent, revokeConsent } = useGtag();
+const gTag = useGtag();
 const runtimeConfig = useRuntimeConfig();
-const { cookiesEnabledIds } = useCookieControl()
 
 useHead({
   htmlAttrs: {
@@ -12,18 +11,24 @@ useSeoMeta({
   googleSiteVerification: runtimeConfig.public.googleSiteVerification,
 });
 
+const enableGA = enableGoogleAnalytics();
 // Cookieの有効/無効の変更を監視
 watch(
-  () => cookiesEnabledIds.value,
-  (current, previous) => {
-    if (!previous?.includes('ga') && current?.includes('ga')) {
-      grantConsent();
-    } else if (previous?.includes('ga') && !current?.includes('ga')) {
-      revokeConsent();
+  () => enableGA.value, () => {
+    if (enableGA.value) {
+      gTag.grantConsent();
+    } else {
+      gTag.revokeConsent();
     }
   },
   { deep: true },
-)
+);
+
+const answerAnalytics = answerAnalyticsQuestion();
+const onAnalytics = (value: boolean) => {
+  enableGA.value = value;
+  answerAnalytics.value = true;
+};
 </script>
 
 <template>
@@ -31,13 +36,27 @@ watch(
     <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
-  <CookieControl locale="ja">
-    <template #bar>
-      <h2>{{ $cookies.moduleOptions.localeTexts.ja?.bannerTitle }}</h2>
-      <p>{{ $cookies.moduleOptions.localeTexts.ja?.bannerDescription }}</p>
-      <NuxtLink class="link text-white font-bold" to="/privacy">プライバシーポリシー</NuxtLink>
-    </template>
-  </CookieControl>
+
+  <div class="fixed bottom-0 m-3">
+    <ClientOnly>
+      <div v-if="!answerAnalytics" role="alert" class="alert glass">
+        <div>
+          <h3 class="font-bold">当サイトでは、使用状況のデータの収集のために解析ツールなどを使用することがあります。</h3>
+          <div class="text-xs">
+            <span>このデータは匿名で収集されており、個人を特定するものではありません。データの収集に同意される場合は、「同意」ボタンを押してください。</span>
+            <br>
+            <span>この設定は、下部にある<Icon name="ic:outline-privacy-tip" size="20px"></Icon>から変更することができます。</span>
+            <br>
+            <NuxtLink class="link" to="/privacy">プライバシーポリシー</NuxtLink>
+          </div>
+        </div>
+        <div class="flex flex-row gap-5">
+          <button class="btn btn-sm" @click="onAnalytics(false)">拒否</button>
+          <button class="btn btn-sm btn-primary" @click="onAnalytics(true)">同意</button>
+        </div>
+      </div>
+    </ClientOnly>
+  </div>
 </template>
 
 <style>
