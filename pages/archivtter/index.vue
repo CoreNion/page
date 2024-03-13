@@ -39,7 +39,7 @@ const searchUrl = computed(() => {
   <div class="my-5 mx-3 flex flex-col lg:items-center">
     <h1 class="text-4xl text-center font-bold">Archivtter</h1>
     <p class="text-center">
-      <span>過去のX ポスト(ツイート)を、日付の範囲で簡単に検索できるリンクを3 STEPで発行します！</span>
+      <span>過去のXポスト(ツイート)を、日付の範囲で簡単に検索できるリンクを3 STEPで発行します！</span>
     </p>
 
     <div class="flex flex-row flex-wrap gap-3 my-4">
@@ -67,10 +67,12 @@ const searchUrl = computed(() => {
 
     <div class="divider"></div>
 
-    <div class="border-2 rounded-xl p-5 max-w-screen-lg">
+    <div class="border-2 rounded-xl p-5">
       <h1 class="text-xl font-bold">作成結果</h1>
 
-      <div class="whitespace-nowrap overflow-x-auto font-mono my-2">{{ searchUrl }}</div>
+      <div class="overflow-x-scroll font-mono my-2 w-[87vw] xl:w-fit">
+        <span class="whitespace-nowrap">{{ searchUrl }}</span>
+      </div>
       <a class="btn w-full" :href="searchUrl">検索結果にアクセス</a>
     </div>
   </div>
