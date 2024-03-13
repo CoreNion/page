@@ -50,7 +50,7 @@ useSeoMeta({
             Active Learner (commute cource).
             <br>
             <br>
-            Interested in Flutter / Node.js / Web.
+            Interested in Web (Nuxt.js / Vue) / Flutter.
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@ useSeoMeta({
             <IndexTl class="mb-5 ml-4" time="Jan 2021" title="Ny0bi Toolの初版をリリース">
               当時はファイル形式でのインストールでしたが、後にChrome Web Storeでの配信も開始しました。
             </IndexTl>
-            <IndexTl class="mb-3 ml-4" time="Apr 2021" title="N高等学校に入学" color="bg-zinc-400" />
+            <IndexTl class="mb-3 ml-4" time="Apr 2021" title="N高等学校に入学、通学コースに所属" color="bg-zinc-400" />
             <IndexTl class="mb-10 ml-4" time="Apr 2021" title="Ny0bi Toolを「磁石祭 2021」(N/S高・N中等部文化祭)のプログラミングブースに出展">
               <a class="link" href="https://twitter.com/nhigh_info/status/1386241067222249473" target="_blank"
                 rel="noreferrer">N/S高の公式Twitter</a>
@@ -122,11 +122,13 @@ useSeoMeta({
                 rel="noreferrer">オンラインで出展</a>
               しました。
             </IndexTl>
-            <IndexTl class="mb-10 ml-4" time="Dec 2023" title="CP Dashboardを開発/公開">
+            <IndexTl class="mb-5 ml-4" time="Dec 2023 ~ Mar 2024" title="CP Dashboardを開発/公開">
               キャンパスの時計やタイマー機能を改善しようと思い、それらを1画面にまとめたダッシュボードサイトを開発しました。
               <br>
               今回は電子工作への挑戦も兼ねて、Arudinoに接続されたセンサーからの温湿度や気圧データを表示する機能も追加しました。
             </IndexTl>
+            <IndexTl class="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-400" />
+            <IndexTl class="mb-2 ml-4" time="Apr 2024" title="専門学校に入学 (予定)" color="bg-zinc-400" />
           </ol>
       </div>
     </div>
