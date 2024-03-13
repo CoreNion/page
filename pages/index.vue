@@ -130,7 +130,19 @@ useSeoMeta({
             <IndexTl class="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-400" />
             <IndexTl class="mb-2 ml-4" time="Apr 2024" title="専門学校に入学 (予定)" color="bg-zinc-400" />
           </ol>
+        </div>
+      </div>
+
+      <div class="mx-3 max-w-screen-2xl">
+        <h1 class="text-4xl font-bold my-5"># Accounts</h1>
+
+        <div class="flex flex-wrap gap-5 lg:gap-7 justify-center lg:justify-start lg:ml-7">
+          <IndexAccount icon="grommet-icons:github" title="GitHub" url="https://github.com/CoreNion"
+            accountID="@CoreNion" bgColor="bg-[#171515]" textColor="text-white" />
+          <IndexAccount icon="carbon:logo-x" title="X (Twitter)" url="https://twitter.com/CoreiNion"
+            accountID="@CoreiNion" bgColor="bg-sky-900" textColor="text-white" />
+        </div>
       </div>
     </div>
   </div>
-</div></template>
+</template>
