@@ -16,9 +16,9 @@ const enableGA = enableGoogleAnalytics();
 watch(
   () => enableGA.value, () => {
     if (enableGA.value) {
-      gTag.grantConsent();
+      gTag.initialize();
     } else {
-      gTag.revokeConsent();
+      gTag.disableAnalytics();
     }
   },
   { deep: true },

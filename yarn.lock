@@ -3614,7 +3614,7 @@ __metadata:
     "@vueuse/nuxt": "npm:^10.9.0"
     daisyui: "npm:^4.7.3"
     nuxt: "npm:^3.10.3"
-    nuxt-gtag: "npm:^1.2.0"
+    nuxt-gtag: "npm:^2.0.5"
     nuxt-icon: "npm:^0.6.9"
     typescript: "npm:^5.4.2"
     vue: "npm:^3.4.21"
@@ -7020,15 +7020,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-gtag@npm:^1.2.0":
-  version: 1.2.1
-  resolution: "nuxt-gtag@npm:1.2.1"
+"nuxt-gtag@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "nuxt-gtag@npm:2.0.5"
   dependencies:
-    "@nuxt/kit": "npm:^3.10.2"
+    "@nuxt/kit": "npm:^3.10.3"
     defu: "npm:^6.1.4"
     pathe: "npm:^1.1.2"
     ufo: "npm:^1.4.0"
-  checksum: 10c0/e0a391974631465b5e42c532380e504c3ea96358cd3ccf33823329c135dc0f019b60e6267232ba78b14f8ee579369ad99b3120f78670bc6933056831b6feeb94
+  checksum: 10c0/57653fdaef5be32672aae5c683829a7321eecdad90ec3cfbd484837e1154deaee6d99752bfa348176f313f7c3702ca98e228c38e95d01dbf78a44e6ba3151327
   languageName: node
   linkType: hard
 

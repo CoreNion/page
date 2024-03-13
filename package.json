@@ -17,7 +17,7 @@
     "@vueuse/nuxt": "^10.9.0",
     "daisyui": "^4.7.3",
     "nuxt": "^3.10.3",
-    "nuxt-gtag": "^1.2.0",
+    "nuxt-gtag": "^2.0.5",
     "nuxt-icon": "^0.6.9",
     "typescript": "^5.4.2",
     "vue": "^3.4.21",

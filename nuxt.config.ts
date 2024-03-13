@@ -20,6 +20,6 @@ export default defineNuxtConfig({
   },
   modules: ['@vueuse/nuxt', '@nuxtjs/tailwindcss', 'nuxt-icon', 'nuxt-gtag', '@nuxtjs/sitemap'],
   gtag: {
-    initialConsent: false
+    enabled: false
   },
 })
