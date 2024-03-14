@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div class="mockup-window shadow-xl w-[26em] 2xl:w-[30em] border-2 m-3 bg-green-50">
+  <div class="mockup-window shadow-xl w-full lg:w-[29em] border-2 m-3 bg-green-50">
     <div class="card-body">
       <div class="card-title">
         <img class="rounded-xl h-16 md:mr-2" :src="useRuntimeConfig().app.baseURL + props.icon" :alt="props.title + '\'s icon'" />
