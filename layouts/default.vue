@@ -13,7 +13,7 @@ const enableGA = enableGoogleAnalytics();
             </svg>
           </label>
 
-          <ul class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52" tabindex="0">
+          <ul class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-50" tabindex="0">
             <li>
               <NuxtLink to="/trucker/" no-prefetch>FileTrucker</NuxtLink>
             </li>
