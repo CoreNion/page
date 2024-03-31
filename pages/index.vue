@@ -45,9 +45,7 @@ useSeoMeta({
             </div>
           </div>
           <p class="py-6 text-xl">
-            18 years old. Student of N High School. (6th term)
-            <br>
-            Active Learner (commute cource).
+            18 years old. Student.
             <br>
             <br>
             Interested in Web (Nuxt.js / Vue) / Flutter.
@@ -128,7 +126,6 @@ useSeoMeta({
               今回は電子工作への挑戦も兼ねて、Arudinoに接続されたセンサーからの温湿度や気圧データを表示する機能も追加しました。
             </IndexTl>
             <IndexTl class="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-400" />
-            <IndexTl class="mb-2 ml-4" time="Apr 2024" title="専門学校に入学 (予定)" color="bg-zinc-400" />
           </ol>
         </div>
       </div>
