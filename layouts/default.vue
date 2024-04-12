@@ -47,9 +47,10 @@ const enableGA = enableGoogleAnalytics();
     <footer class="footer items-center p-4 bg-black text-neutral-content ">
       <div class="w-full flex flex-row justify-stretch">
         <p class="flex-1">
-          <span>Copyright © 2024 CoreNion</span>
+          <span>© 2024 CoreNion</span>
           <br>
-          <NuxtLink class="link text-white mr-2" to="/privacy">Site's Privacy Policy</NuxtLink>
+          <NuxtLink class="link text-white mr-2" to="/privacy">Privacy</NuxtLink>
+          <a class="link text-blue-200" href="https://github.com/CoreNion/page">Source Code</a>
         </p>
         <p class="flex-1 flex flex-row justify-end items-center gap-4">
           <a href="https://github.com/CoreNion">
