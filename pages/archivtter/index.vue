@@ -43,7 +43,7 @@ const searchUrl = computed(() => {
     </p>
 
     <div class="flex flex-row flex-wrap gap-3 my-4">
-      <div class="grow w-96 bg-base-200 text-base-content p-4 rounded-xl">
+      <div class="grow w-96 bg-base-200 text-base-content p-4 rounded-xl flex flex-col justify-around">
         <h2 class="text-xl text-center font-bold">Step 1: ユーザー名を入力</h2>
         <p>検索したいユーザーの、@から始まるユーザー名を入力してください。</p>
         <div class="mt-2 join w-full">
@@ -51,13 +51,13 @@ const searchUrl = computed(() => {
           <input type="text" v-model="accountName" class="join-item input w-full" placeholder="ユーザー名" required>
         </div>
       </div>
-      <div class="grow w-96 bg-base-200 text-base-content p-4 rounded-xl">
+      <div class="grow w-96 bg-base-200 text-base-content p-4 rounded-xl flex flex-col justify-around">
         <h2 class="text-xl text-center font-bold">Step 2: 検索する期間の開始日を設定</h2>
         <p>検索する日付の範囲の、開始日を入力してください。</p>
         <input class="mt-2 input w-full" v-model="sinceDate" type="date" placeholder="ブラウザーの機能を利用するか、yyyy-mm-ddの形式で入力"
           required>
       </div>
-      <div class="grow w-96 bg-base-200 text-base-content p-4 rounded-xl">
+      <div class="grow w-96 bg-base-200 text-base-content p-4 rounded-xl flex flex-col justify-around">
         <h2 class="text-xl text-center font-bold">Step 3: 検索する期間の終了日を設定</h2>
         <p>検索する日付の範囲の、終了日を入力してください。</p>
         <input class="mt-2 input w-full" v-model="untilDate" type="date" placeholder="ブラウザーの機能を利用するか、yyyy-mm-ddの形式で入力"
