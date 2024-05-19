@@ -53,7 +53,7 @@ useSeoMeta({
     </section>
 
     <section>
-      <h2 class="text-2xl font-bold my-5"># Service Accounts</h2>
+      <h2 class="text-2xl font-bold my-5"># Social Accounts</h2>
       <div class="flex flex-wrap gap-5 lg:gap-7 justify-start lg:ml-7">
         <IndexAccount icon="grommet-icons:github" title="GitHub" url="https://github.com/CoreNion" accountID="@CoreNion"
           bgColor="bg-[#171515]" textColor="text-white" />
