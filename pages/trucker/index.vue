@@ -39,7 +39,7 @@ useSeoMeta({
           </div>
           <p class="mt-6 mb-3 text-lg">どんな端末でも使える、サーバーを介さないファイル共有アプリ。</p>
           <div class="badge badge-lg badge-success m-2 inline font-medium p-1 px-3">
-            <a href="https://applikoshien.jp/award2022" target="_blank" rel="noreferrer">アプリ甲子園 ファイナリスト選出作品</a>
+            アプリ甲子園 ファイナリスト選出作品
           </div>
         </div>
       </div>
