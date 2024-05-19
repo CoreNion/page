@@ -47,9 +47,13 @@ useSeoMeta({
           <p class="py-6 text-xl">
             18 years old. Student.
             <br>
-            <br>
             Interested in Web (Nuxt.js / Vue) / Flutter.
           </p>
+          <div class="badge badge-lg badge-ghost badge-outline font-medium px-3">
+            <NuxtLink to="/accounts">
+              <span>Accounts</span>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
@@ -133,6 +137,11 @@ useSeoMeta({
       <div class="mx-3 max-w-screen-2xl">
         <h1 class="text-4xl font-bold my-5"># Accounts</h1>
 
+        <p class="mb-2 font-bold">
+          ＊メールアドレスなどの詳細は、
+          <NuxtLink class="link" to="/accounts">各アカウント一覧</NuxtLink>
+          を参照してください。
+        </p>
         <div class="flex flex-wrap gap-5 lg:gap-7 justify-center lg:justify-start lg:ml-7">
           <IndexAccount icon="grommet-icons:github" title="GitHub" url="https://github.com/CoreNion"
             accountID="@CoreNion" bgColor="bg-[#171515]" textColor="text-white" />

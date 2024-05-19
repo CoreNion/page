@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       googleSiteVerification: '',
+      mailAdress: "hoge@example.com", 
     }
   },
   modules: ['@vueuse/nuxt', '@nuxtjs/tailwindcss', 'nuxt-icon', 'nuxt-gtag', '@nuxtjs/sitemap'],
