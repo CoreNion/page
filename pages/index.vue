@@ -62,7 +62,7 @@ useSeoMeta({
       <div class="m-3">
         <h1 class="text-4xl font-bold my-5"># Nion's Works</h1>
         <p class="mx-3">
-          私の作品は、日頃の生活の中で「あったらいいな」と思ったアイデアを、さまざまな技術を活用してカタチにしたものが多いです。
+          私の作品では、日頃の生活の中で「あったらいいな」と思ったアイデアを、さまざまな技術を活用してカタチにしています。
           <br>
           少しでも人の役に立ってほしいという思いから、基本的にオープンソース/無料で公開しています。
         </p>
@@ -134,7 +134,7 @@ useSeoMeta({
               単語帳感覚で使える、繰り返し学習などに便利な暗記帳アプリを作りたいと思い、開発しました。
               <br>
               今回も磁石祭には
-              <a class="link" href="https://nnn.ed.jp/school_festival/s2023/plan/#ex-okejlp_3-l8v" target="_blank"
+              <a class="link" href="https://nnn.ed.jp/school_festival/2023/plan/#ex-okejlp_3-l8v" target="_blank"
                 rel="noreferrer">オンラインで出展</a>
               しました。
             </IndexTl>
@@ -146,6 +146,8 @@ useSeoMeta({
               一部の機能は生徒や先生のフィードバックを受けて追加しました！
               <br>
               なお、開発にはNuxt.jsを使用し、後のこのサイトのリニューアルにも活かしました。
+              <br>
+              <a class="link" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank">N高ブログでのインタビュー</a>
             </IndexTl>
             <IndexTl class="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-400" />
           </ol>
