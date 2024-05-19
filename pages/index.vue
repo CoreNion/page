@@ -50,9 +50,9 @@ useSeoMeta({
             Interested in Web (Nuxt.js / Vue) / Flutter.
           </p>
           <div class="badge badge-lg badge-ghost badge-outline font-medium px-3">
-            <NuxtLink to="/accounts">
+            <a href="/accounts">
               <span>Accounts</span>
-            </NuxtLink>
+            </a>
           </div>
         </div>
       </div>
@@ -157,7 +157,7 @@ useSeoMeta({
 
         <p class="mb-2 font-bold">
           ＊メールアドレスなどの詳細は、
-          <NuxtLink class="link" to="/accounts">各アカウント一覧</NuxtLink>
+          <a href="/accounts" class="link">各アカウント一覧</a>
           を参照してください。
         </p>
         <div class="flex flex-wrap gap-5 lg:gap-7 justify-center lg:justify-start lg:ml-7">
