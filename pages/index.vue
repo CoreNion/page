@@ -49,11 +49,7 @@ useSeoMeta({
             <br>
             Interested in Web (Nuxt.js / Vue) / Flutter.
           </p>
-          <div class="badge badge-lg badge-ghost badge-outline font-medium px-3">
-            <a href="/accounts">
-              <span>Accounts</span>
-            </a>
-          </div>
+          <div class="badge badge-lg badge-primary font-medium px-3">I'm looking for a job!</div>
         </div>
       </div>
     </div>
@@ -127,6 +123,8 @@ useSeoMeta({
               <a class="link" href="https://www.youtube.com/watch?v=rnzmYaCPlzs" target="_blank"
                 rel="noreferrer">自分の制作物についてのプレゼンテーション</a>
               を行いました。
+              <br>
+              <a class="link" href="https://nnn.ed.jp/news/blog/archives/15912/" target="_blank">N高に掲載されたニュース</a>
             </IndexTl>
             <IndexTl class="mb-10 ml-4" time="Apr 2023" title="Leasyの初版をリリース、「磁石祭 2023」に出展">
               私が初めてアプリストアでリリースしたアプリです！
