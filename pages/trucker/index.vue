@@ -23,8 +23,15 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterSite: '@CoreiNion',
   twitterCreator: '@CoreiNion',
+  appleItunesApp: {
+    appId: '6504818191',
+  }
 });
 
+onMounted(() => {
+  // @ts-ignore
+  import('@microsoft/store-app-badge');
+});
 </script>
 <template>
   <div>
@@ -38,9 +45,6 @@ useSeoMeta({
             </div>
           </div>
           <p class="mt-6 mb-3 text-lg">どんな端末でも使える、サーバーを介さないファイル共有アプリ。</p>
-          <div class="badge badge-lg badge-success m-2 inline font-medium p-1 px-3">
-            アプリ甲子園 ファイナリスト選出作品
-          </div>
         </div>
       </div>
     </div>
@@ -49,25 +53,23 @@ useSeoMeta({
       <h1 class="text-4xl font-bold text-center">Features</h1>
       <div class="flex flex-wrap justify-center m-5 gap-7">
         <AppFeature title="Local Network">
-          <span>ファイルの送受信などは、全てローカルネットワーク内のみで行われます。 </span>
-          <span>そのため、外部には一切データが保存されません！</span>
+          <span>このアプリは通信に外部のサーバーを用いないため、同じネットワークに接続された端末であれば高速に共有することが出来ます！ </span>
+          <span>また、暗号化にも対応しているため、公共無線LANなど信用できないネットワークでも安全に共有することが出来ます！</span>
         </AppFeature>
         <AppFeature title="Cross-Platform">
-          <span>FileTruckerはiOS / Android / Windows / macOS / Linuxに対応しています！ </span>
-          <span>また、macOS / Linuxはarm64(Apple Silicon)にネイティブに対応しています！</span>
+          <span>このアプリはクロスプラットフォームで開発されているため、プラットフォームを気にすることなく、ファイルや写真共有を簡単に行うことができます！</span>
         </AppFeature>
       </div>
       <div class="flex flex-wrap justify-center m-5 gap-7">
         <AppFeature title="Simple">
           <span>ファイル共有に特化した、操作しやすく分かりやすいUIに設計しました。</span>
+          <span>デバイス検知機能により、ワンタップで他の端末にファイルを送信することが出来ます！</span>
         </AppFeature>
         <AppFeature title="Open Source">
           <span class="my-2">ソースコードは全てGitHubで公開されています！ </span>
-          <a href="https://github.com/CoreNion/OpenFileTrucker" target="_blank" rel="noreferrer">
-            <img class="inline"
-              src="https://img.shields.io/badge/CoreNion-OpenFileTrucker-informational?style=flat&amp;logo=github"
-              alt="View GitHub repository">
-          </a>
+
+          <a class="btn btn-primary max-w-fit" href="https://github.com/CoreNion/OpenFileTrucker" target="_blank"
+            rel="noreferrer">GitHub</a>
         </AppFeature>
       </div>
     </div>
@@ -76,36 +78,27 @@ useSeoMeta({
       <h1 class="text-4xl font-bold text-center">Downloads</h1>
 
       <div class="flex flex-col sm:flex-row items-stretch gap-5 m-5 flex-wrap">
-        <AppDownload title="Android" version="Android 8.1 以降" desc="配布方法の特性上、警告が出る場合があります。詳細ボタンなどを押してインストールを続行してください。"
-          id="android">
-          <a class="btn"
-            href="https://github.com/CoreNion/OpenFileTrucker/releases/latest/download/android-single.apk">Download
-            .apk</a>
+        <AppDownload title="Android" version="Android 11 以上" desc="Chromebookにもインストール可能です。" id="android">
+          <a href="https://play.google.com/store/apps/details?id=dev.cnion.trucker">
+            <img class="storeIcon" alt="Google Play で手に入れよう" src="/assets/store/play.svg">
+          </a>
         </AppDownload>
-        <AppDownload title="iOS" version="iOS 12.4以降" desc="AltStoreなどを利用してインストールしてください。" id="ios">
-          <a class="btn" href="https://github.com/CoreNion/OpenFileTrucker/releases/latest/download/ios.ipa">Download
-            .ipa</a>
-          <a class="btn btn-secondary"
-            href="altstore://install/?url=https://github.com/CoreNion/OpenFileTrucker/releases/latest/download/ios.ipa">Install
-            via AltStore</a>
+        <AppDownload title="iOS" version="iOS 15.6 以上" desc="ローカルネットワークの権限は必ず許可してください。" id="ios">
+          <a href="https://apps.apple.com/jp/app/open-filetrucker/id6504818191">
+            <img class="storeIcon" src="/assets/store/appstore.svg" alt="Download on the App Store"></a>
         </AppDownload>
       </div>
-      <div class="flex flex-col sm:flex-row items-stretch gap-5 m-5 flex-wrap xl:max-">
-        <AppDownload title="Windows" version="Windows 10 以降"
-          desc="Windows Defenderによる警告が出た場合、ダイアログにある「詳細情報」をクリックして開き、実行ボタンをクリックしてください。" id="windows">
-          <a class="btn"
-            href="https://github.com/CoreNion/OpenFileTrucker/releases/latest/download/windows-x64.zip">Download
-            x64</a>
+      <div class="flex flex-col sm:flex-row items-stretch gap-5 m-5 flex-wrap">
+        <AppDownload title="Windows" version="Windows 10 1903 以上" desc="x64のみ対応、審査に承認され次第配信されます。" id="windows">
+          <!-- <ms-store-badge productid="9NTFB2PN3GJ1" language="ja-JP" animation="on"></ms-store-badge> -->
         </AppDownload>
-        <AppDownload title="macOS" version="macOS 11.0 以降"
-          desc="制約や都合によりアプリ署名がされていないため、macOSによる警告が出る場合があります。警告が表示された場合、FileTrucker.appを右クリックして「開く」をクリックし、次のダイアログでも「開く」をクリックすると起動できます。"
-          id="macos">
-          <a class="btn"
-            href="https://github.com/CoreNion/OpenFileTrucker/releases/latest/download/macos-universal.dmg">Download
-            dmg (Universal)</a>
+        <AppDownload title="macOS" version="macOS 12.5 以上" desc="Intelチップもサポートするネイティブ版は、審査に承認され次第配信されます。" id="macos">
+          <a href="https://apps.apple.com/jp/app/open-filetrucker/id6504818191">
+            <img class="storeIcon" src="/assets/store/appstore_mac.svg" alt="Download on the App Store">
+          </a>
         </AppDownload>
-        <AppDownload title="Linux" version="Desktop" desc="GUIアプリのため、デスクトップの環境が必要です。※広範囲な動作確認は困難なため、一部環境では動作しない可能性があります。"
-          id="linux">
+        <AppDownload title="Linux (Bundle)" version="Desktop"
+          desc="GUIアプリのため、デスクトップの環境が必要です。※広範囲な動作確認は困難なため、一部環境では動作しない可能性があります。" id="linux">
           <a class="btn"
             href="https://github.com/CoreNion/OpenFileTrucker/releases/latest/download/linux-x86_64.zip">Download
             x86_64</a>
@@ -117,3 +110,18 @@ useSeoMeta({
     </div>
   </div>
 </template>
+
+<style scoped>
+.topSC {
+  height: 75vh;
+  max-height: 800px
+}
+
+ms-store-badge::part(img) {
+  max-height: 55px;
+}
+
+.storeIcon {
+  height: 55px;
+}
+</style>

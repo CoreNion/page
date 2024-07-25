@@ -148,6 +148,11 @@ useSeoMeta({
               <a class="link" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank">N高ブログでのインタビュー</a>
             </IndexTl>
             <IndexTl class="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-400" />
+            <IndexTl class="mb-4 ml-4" time="May 2024 ~ July 2024" title="Open FileTruckerをアップデート、ストアで公開">
+              Open FileTruckerのアップデートを行い、暗号化機能の実装や、デバイス検知機能の追加などを行いました。
+              <br>
+              そして、念願のアプリストアでの公開を開始しました！
+            </IndexTl>
           </ol>
         </div>
       </div>
