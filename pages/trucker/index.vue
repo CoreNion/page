@@ -89,7 +89,10 @@ onMounted(() => {
         </AppDownload>
       </div>
       <div class="flex flex-col sm:flex-row items-stretch gap-5 m-5 flex-wrap">
-        <AppDownload title="Windows" version="Windows 10 1903 以上" desc="x64のみ対応、審査に承認され次第配信されます。" id="windows">
+        <AppDownload title="Windows" version="Windows 10 1903 以上" desc="x64のみ対応、Microsoft Storeには審査に承認され次第配信されます。" id="windows">
+          <a class="btn"
+            href="https://github.com/CoreNion/OpenFileTrucker/releases/latest/download/windows-x64.zip">Download
+            x64</a>
           <!-- <ms-store-badge productid="9NTFB2PN3GJ1" language="ja-JP" animation="on"></ms-store-badge> -->
         </AppDownload>
         <AppDownload title="macOS" version="macOS 12.5 以上" desc="Intelチップもサポートするネイティブ版は、審査に承認され次第配信されます。" id="macos">
