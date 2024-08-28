@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   ],
 
   gtag: {
-    enabled: false
+    initMode: 'manual'
   },
 
   compatibilityDate: '2024-07-23',
