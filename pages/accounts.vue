@@ -18,6 +18,9 @@ useHead({
       href: `${baseURL}favicon.ico`,
     }
   ],
+  meta: [
+    { hid: 'robots', name: 'robots', content: 'noindex' }
+  ]
 });
 
 useSeoMeta({
