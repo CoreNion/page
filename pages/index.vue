@@ -45,7 +45,7 @@ useSeoMeta({
             </div>
           </div>
           <p class="py-6 text-xl">
-            18 years old. Student.
+            19 years old. Student.
             <br>
             Interested in Web (Nuxt.js / Vue) / Flutter.
           </p>
