@@ -45,7 +45,7 @@ const onAnalytics = (value: boolean) => {
           <div class="text-xs">
             <span>このデータは匿名で収集されており、個人を特定するものではありません。データの収集に同意される場合は、「同意」ボタンを押してください。</span>
             <br>
-            <span>この設定は、下部にある<Icon name="ic:outline-privacy-tip" size="20px"></Icon>から変更することができます。</span>
+            <span>この設定は、下部にある<Icon name="carbon:data-analytics" size="20px"></Icon>から変更することができます。</span>
             <br>
             <NuxtLink class="link" to="/privacy">プライバシーポリシー</NuxtLink>
           </div>

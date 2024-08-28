@@ -54,14 +54,14 @@ const enableGA = enableGoogleAnalytics();
         </p>
         <p class="flex-1 flex flex-row justify-end items-center gap-4">
           <a href="https://github.com/CoreNion">
-            <Icon name="grommet-icons:github" size="40px"></Icon>
+            <Icon name="carbon:logo-github" size="40px"></Icon>
           </a>
           <a href="https://twitter.com/CoreiNion">
             <Icon name="carbon:logo-x" size="40px"></Icon>
           </a>
 
           <button class="btn btn-primary" onclick="analyticsModal.showModal()">
-            <Icon name="ic:outline-privacy-tip" size="25px"></Icon>
+            <Icon name="carbon:data-analytics" size="25px"></Icon>
           </button>
         </p>
       </div>

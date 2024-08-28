@@ -43,14 +43,14 @@ useSeoMeta({
     <section class="my-4">
       <h1 class="text-3xl font-medium">各アカウント一覧</h1>
       <div class="alert my-3">
-        <Icon name="ic:outline-info" size="24px"></Icon>
+        <Icon name="carbon:information" size="24px"></Icon>
         <span>学内Slackなどの非公開の連絡先を持っている場合、そちらの方を使用することを推奨します。</span>
       </div>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold my-5"># Email Adress</h2>
-      <IndexAccount icon="ic:outline-mail" title="Primary Adress" :url="`mailto:${mailAdress}`" :accountID="mailAdress"
+      <IndexAccount icon="carbon:email" title="Primary Adress" :url="`mailto:${mailAdress}`" :accountID="mailAdress"
           bgColor="bg-secondary" textColor="secondary-content" class="max-w-min lg:ml-7" />
       <p class="mt-3">ここで公開しているメールアドレスは、GoogleアカウントやGitなどでも使用しています。</p>
     </section>
