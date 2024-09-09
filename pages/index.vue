@@ -63,17 +63,17 @@ useSeoMeta({
           少しでも人の役に立ってほしいという思いから、基本的にオープンソース/無料で公開しています。
         </p>
         <div class="flex flex-wrap justify-center">
-          <IndexArch icon="cp-dashboard/icon.svg" title="CP Dashboard" desc="必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。"
-            repo="CoreNion/cp-dashboard" pagePath="https://cpd.cnion.dev/" :newBadge="true" />
-          <IndexArch icon="leasy/icon.svg" title="Leasy" desc="「あなただけの」使いやすい暗記帳で学習しよう。" repo="CoreNion/Leasy"
-            pagePath="/leasy" :newBadge="false" />
+          <IndexArch icon="cp-dashboard/icon.svg" title="Campus Dashboard" desc="必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。"
+            repo="CoreNion/cp-dashboard" pagePath="https://cpd.cnion.dev/" :newBadge="false" />
           <IndexArch icon="trucker/icon.svg" title="Open FileTrucker" desc="どんな端末でも使える、サーバーを介さないファイル共有アプリ。"
             repo="CoreNion/OpenFileTrucker" pagePath="/trucker" :newBadge="false" />
-          <IndexArch icon="ny0bi_tool/icon.png" title="Ny0bi Tool" desc="N予備校をダークモードにするChrome拡張機能。"
-            repo="CoreNion/Ny0bi_Tool"
-            pagePath="https://chrome.google.com/webstore/detail/lkmfjlmabmkedlocaclfgbemmdofjfjg" :newBadge="false" />
+          <IndexArch icon="leasy/icon.svg" title="Leasy" desc="「あなただけの」使いやすい暗記帳で学習しよう。" repo="CoreNion/Leasy"
+            pagePath="/leasy" :newBadge="false" />
           <IndexArch icon="archivtter/icon.png" title="Archivtter" desc="過去のXポストを簡単に検索できるウェブサイト。"
             repo="CoreNion/Archivtter" pagePath="/archivtter" :newBadge="false" />
+          <IndexArch icon="ny0bi_tool/icon.png" title="Ny0bi Tool" desc="N予備校をダークモードにするChrome拡張機能。(アーカイブ)"
+            repo="CoreNion/Ny0bi_Tool"
+            pagePath="https://chrome.google.com/webstore/detail/lkmfjlmabmkedlocaclfgbemmdofjfjg" :newBadge="false" />
         </div>
       </div>
       <div class="m-3">
