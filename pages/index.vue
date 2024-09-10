@@ -69,8 +69,8 @@ useSeoMeta({
             repo="CoreNion/OpenFileTrucker" pagePath="/trucker" :newBadge="false" />
           <IndexArch icon="leasy/icon.svg" title="Leasy" desc="「あなただけの」使いやすい暗記帳で学習しよう。" repo="CoreNion/Leasy"
             pagePath="/leasy" :newBadge="false" />
-          <IndexArch icon="archivtter/icon.png" title="Archivtter" desc="過去のXポストを簡単に検索できるウェブサイト。"
-            repo="CoreNion/Archivtter" pagePath="/archivtter" :newBadge="false" />
+          <IndexArch icon="archivtter/icon.png" title="Archivtter" desc="過去のXポストを簡単に検索できるウェブサイト。(現在はこのサイトに組込)"
+            repo="CoreNion/Page" pagePath="/archivtter" :newBadge="false" />
           <IndexArch icon="ny0bi_tool/icon.png" title="Ny0bi Tool" desc="N予備校をダークモードにするChrome拡張機能。(アーカイブ)"
             repo="CoreNion/Ny0bi_Tool"
             pagePath="https://chrome.google.com/webstore/detail/lkmfjlmabmkedlocaclfgbemmdofjfjg" :newBadge="false" />
