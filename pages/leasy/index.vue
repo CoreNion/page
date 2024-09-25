@@ -122,7 +122,7 @@ onMounted(() => {
       </div>
       <div class="flex flex-col sm:flex-row items-stretch gap-5 m-5 flex-wrap">
         <AppDownload title="Windows" version="Windows 10 以降" desc="x64のみ対応しています。" id="windows">
-          <ms-store-badge productid="9PNXGM6NPF1Q" language="ja-JP" animation="on"></ms-store-badge>
+          <ms-store-badge productid="9PNXGM6NPF1Q" 	window-mode="full" theme="dark" language="ja-JP" animation="off" class="h-14"></ms-store-badge>
         </AppDownload>
         <AppDownload title="macOS" version="macOS 11.0 以降" desc="iCloud Driveによるデータの同期に対応しています。" id="macos">
           <a href="https://apps.apple.com/jp/app/leasy/id6448246576?itsct=apps_box_badge&amp;amp;itscg=30200"><img
