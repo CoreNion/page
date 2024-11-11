@@ -9,21 +9,21 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.2.1",
-    "@microsoft/store-app-badge": "https://github.com/microsoft/app-store-badge.git",
-    "@nuxt/icon": "^1.5.1",
-    "@nuxtjs/color-mode": "^3.5.1",
-    "@nuxtjs/sitemap": "^6.1.0",
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@vueuse/core": "^11.1.0",
-    "@vueuse/nuxt": "^11.1.0",
-    "daisyui": "^4.12.10",
-    "nuxt": "^3.13.2",
+    "@iconify-json/carbon": "^1.2.4",
+    "@microsoft/store-app-badge": "https://github.com/microsoft/app-store-badge.git#commit=809a020c28f0d07e4507b2b6f4867425834eed04",
+    "@nuxt/icon": "^1.7.2",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/sitemap": "^6.1.5",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@vueuse/core": "^11.2.0",
+    "@vueuse/nuxt": "^11.2.0",
+    "daisyui": "^4.12.14",
+    "nuxt": "^3.14.159",
     "nuxt-gtag": "^3.0.1",
-    "typescript": "5.6.2",
-    "vue": "^3.5.8",
+    "typescript": "5.6.3",
+    "vue": "^3.5.12",
     "vue-router": "^4.4.5",
-    "vue-tsc": "^2.1.6"
+    "vue-tsc": "^2.1.10"
   },
-  "packageManager": "yarn@4.4.1+sha512.f825273d0689cc9ead3259c14998037662f1dcd06912637b21a450e8da7cfeb4b1965bbee73d16927baa1201054126bc385c6f43ff4aa705c8631d26e12460f1"
+  "packageManager": "yarn@4.5.1"
 }
