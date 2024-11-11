@@ -1112,7 +1112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.14.159, @nuxt/kit@npm:^3.13.0, @nuxt/kit@npm:^3.13.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.14.0, @nuxt/kit@npm:^3.14.159":
+"@nuxt/kit@npm:3.14.159, @nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.13.0, @nuxt/kit@npm:^3.13.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.14.0, @nuxt/kit@npm:^3.14.159":
   version: 3.14.159
   resolution: "@nuxt/kit@npm:3.14.159"
   dependencies:
@@ -1242,6 +1242,17 @@ __metadata:
     pkg-types: "npm:^1.2.1"
     semver: "npm:^7.6.3"
   checksum: 10c0/81b19c3ab82b9eeb8909666ba9c0ce714a51e481515269e71efe000e915b07ab228c989b045b889a925a63b5ad696a53f13ac9f676a76c58df85177fa1321aca
+  languageName: node
+  linkType: hard
+
+"@nuxtjs/google-fonts@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@nuxtjs/google-fonts@npm:3.2.0"
+  dependencies:
+    "@nuxt/kit": "npm:^3.10.3"
+    google-fonts-helper: "npm:^3.5.0"
+    pathe: "npm:^1.1.2"
+  checksum: 10c0/bdd4dc825452f9b640da150fb1334e1dd78988b15f565e2bdcb402b5f0565ef9edb0091f0d41f69b32775c621491607efdd80e1911557bf77718f763031d8eb2
   languageName: node
   linkType: hard
 
@@ -3014,6 +3025,7 @@ __metadata:
     "@microsoft/store-app-badge": "https://github.com/microsoft/app-store-badge.git#commit=809a020c28f0d07e4507b2b6f4867425834eed04"
     "@nuxt/icon": "npm:^1.7.2"
     "@nuxtjs/color-mode": "npm:^3.5.2"
+    "@nuxtjs/google-fonts": "npm:^3.2.0"
     "@nuxtjs/sitemap": "npm:^6.1.5"
     "@nuxtjs/tailwindcss": "npm:^6.12.2"
     "@vueuse/core": "npm:^11.2.0"
@@ -3514,7 +3526,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge@npm:^4.2.2":
+"deepmerge@npm:^4.2.2, deepmerge@npm:^4.3.1":
   version: 4.3.1
   resolution: "deepmerge@npm:4.3.1"
   checksum: 10c0/e53481aaf1aa2c4082b5342be6b6d8ad9dfe387bc92ce197a66dea08bd4265904a087e75e464f14d1347cf2ac8afe1e4c16b266e0561cc5df29382d3c5f80044
@@ -4667,6 +4679,18 @@ __metadata:
     slash: "npm:^5.1.0"
     unicorn-magic: "npm:^0.1.0"
   checksum: 10c0/3f771cd683b8794db1e7ebc8b6b888d43496d93a82aad4e9d974620f578581210b6c5a6e75ea29573ed16a1345222fab6e9b877a8d1ed56eeb147e09f69c6f78
+  languageName: node
+  linkType: hard
+
+"google-fonts-helper@npm:^3.5.0":
+  version: 3.6.0
+  resolution: "google-fonts-helper@npm:3.6.0"
+  dependencies:
+    deepmerge: "npm:^4.3.1"
+    hookable: "npm:^5.5.3"
+    ofetch: "npm:^1.3.4"
+    ufo: "npm:^1.5.3"
+  checksum: 10c0/0c87c0b03546af53317bed18a99271fca472fbbc81230226116d11b159a86810d6b595ad28b6d8933c0d91f679c60b4e93bf57ff57e8200d8e533c82ae5a9a4d
   languageName: node
   linkType: hard
 
@@ -8327,7 +8351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ufo@npm:^1.1.2, ufo@npm:^1.5.4":
+"ufo@npm:^1.1.2, ufo@npm:^1.5.3, ufo@npm:^1.5.4":
   version: 1.5.4
   resolution: "ufo@npm:1.5.4"
   checksum: 10c0/b5dc4dc435c49c9ef8890f1b280a19ee4d0954d1d6f9ab66ce62ce64dd04c7be476781531f952a07c678d51638d02ad4b98e16237be29149295b0f7c09cda765

@@ -29,11 +29,22 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-gtag',
     '@nuxtjs/sitemap',
-    "@nuxt/icon"
+    "@nuxt/icon",
+    '@nuxtjs/google-fonts',
   ],
 
   gtag: {
     initMode: 'manual'
+  },
+
+  googleFonts: {
+    families: {
+      "M PLUS 2": "100..900",
+      "Inter": "100..900",
+    },
+    download: false,
+    preload: true,
+    overwriting: true
   },
 
   compatibilityDate: '2024-07-23',

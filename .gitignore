@@ -26,3 +26,6 @@ logs
 # Yarn v4
 .yarn/
 !.yarn/release/*
+
+# Nuxt Fonts
+.data
