@@ -49,6 +49,10 @@ useSeoMeta({
             <br>
             Interested in Web (Nuxt.js / Vue) / Flutter.
           </p>
+          <div class="flex flex-col items-center gap-2">
+            <div class="badge badge-primary badge-lg">KADOKAWAドワンゴ情報工科学院 所属</div>
+            <div class="badge badge-outline badge-lg">Web制作会社でアルバイト中</div>
+          </div>
         </div>
       </div>
     </div>
@@ -147,11 +151,14 @@ useSeoMeta({
               <a class="link" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank">N高ブログでのインタビュー</a>
             </IndexTl>
             <IndexTl class="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-400" />
-            <IndexTl class="ml-4" time="Apr 2024" title="KADOKAWAドワンゴ情報工科学院 専門部 (バンタングループ)に入学" color="bg-yellow-500" />
+            <IndexTl class="ml-4" time="Apr 2024" title="KADOKAWAドワンゴ情報工科学院(バンタングループ) 専門部に入学" color="bg-yellow-500" />
             <IndexTl class="mb-4 ml-4" time="May 2024 ~ July 2024" title="Open FileTruckerをアップデート、ストアで公開">
               Open FileTruckerのアップデートを行い、暗号化機能の実装や、デバイス検知機能の追加などを行いました。
               <br>
               そして、念願のアプリストアでの公開を開始しました！
+            </IndexTl>
+            <IndexTl class="ml-4" time="Oct 2024" title="株式会社アストラザスタジオにアルバイト採用" color="bg-yellow-500">
+              現在も学校に通いながら勤務しています。
             </IndexTl>
           </ol>
         </div>
