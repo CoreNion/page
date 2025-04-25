@@ -1,103 +1,141 @@
 import Image from "next/image";
+import Link from "next/link";
+
+import Account from "@/components/top/contact";
+import Timeline from "@/components/top/timeline";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="bg-white text-black">
+      <section className="min-h-screen bg-[#232F45] text-white">
+        <div className="min-h-screen flex flex-row flex-wrap-reverse items-center justify-around content-center gap-4 max-w-7xl mx-auto">
+          <div className="grid gap-2 text-center">
+            <h1 className="font-bold text-6xl">CoreNion</h1>
+            <h2 className="font-medium text-4xl">Yuta Obara</h2>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <p className="font-light text-xl my-3">
+              Student Programmer
+              <br />
+              Interested in Web Development
+            </p>
+          </div>
+
+          <Image
+            src="/profile.svg"
+            alt="Profile Picture"
+            width={400}
+            height={400}
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </section>
+
+      <section className="p-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-3 max-w-7xl mx-auto">
+        <div className="grid gap-3">
+          <div>
+            <h2 className="font-bold text-4xl">小原 悠太</h2>
+            <span className="text-xl">KADOKAWAドワンゴ情報工科学院 専門部所属</span>
+          </div>
+
+          <p>
+            私の作品では、日頃の生活の中で「あったらいいな」と思ったアイデアを、さまざまな技術を活用してカタチにしています。<br />
+            少しでも人の役に立ってほしいという思いから、基本的にオープンソース/無料で公開しています。
+          </p>
+        </div>
+
+        <div>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/profile.svg"
+            alt="Profile Picture"
+            width={400}
+            height={400}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      </section>
+
+      <section className="p-12 bg-slate-900 text-white grid justify-center items-center">
+        <h2 className="font-bold text-4xl text-center">Timeline</h2>
+
+        <ol className="relative border-l-4 border-green-200">
+          <Timeline className="mb-5 ml-4" time="Aug 2020" title="Archivtterを公開">
+            Xのツイート検索コマンド(since/until)をより簡単に使えるようにするために開発しました。
+            <br />
+            また、
+            <Link className="underline" href="https://progedu.github.io/webappcontest/2020/summer/result/" target="_blank"
+              rel="noreferrer">動くWEBページコンテスト 2020夏</Link>
+            にも応募しました。
+          </Timeline>
+          <Timeline className="mb-5 ml-4" time="Jan 2021" title="Ny0bi Toolの初版をリリース">
+            当時学習に使っていたN予備校にダークモードが欲しいと思い、Chrome拡張機能を開発しました。
+            <br />
+            公開当初はファイル形式でのインストールでしたが、後にChrome Web Storeでの配信も開始しました。
+            <br />
+            また、この作品は同年4月に開催された「磁石祭 2021」(N/S高・N中等部文化祭)のプログラミングブースに出展し、
+            <Link className="underline" href="https://x.com/nhigh_info/status/1386241067222249473" target="_blank"
+              rel="noreferrer">N/S高の公式X</Link>
+            などでも紹介されました。
+          </Timeline>
+          <Timeline className="mb-3 ml-4" time="Apr 2021" title="N高等学校に入学、通学コースに所属" color="bg-zinc-400" />
+          <Timeline className="mb-10 ml-4" time="Oct 2021" title="nnnCheckerを公開">
+            初めて公開した、サーバーを用いた自作のWeb Appです。
+            <br />
+            N/S高生であることを手軽に確実に証明できるようにするために作りました。
+            <br />
+            今回は、N予備校でのプログラミング(Web系)講座での学習を生かし、開発しました。
+          </Timeline>
+          <Timeline className="mb-10 ml-4" time="Apr 2022" title="Open FileTruckerの初版をリリース、「磁石祭 2022」に出展">
+            Windows PCからiPhoneなど異なるプラットフォーム間でのファイル共有に不便を感じ、ローカルネットワークを生かしたシンプルな仕様で共有できるようにするために開発しました。
+            <br />
+            磁石祭には今回はCoreNion独自の企画で<Link className="underline" href="https://nnn.ed.jp/school_festival/2022/plan/jqv9kyeuht-b/"
+              target="_blank" rel="noreferrer">オンラインで出展</Link>しました。
+          </Timeline>
+          <Timeline className="mb-8 ml-4" time="Sep 2022 ~ Oct 2022" title="Open FileTruckerをアプリ甲子園へ提出、ファイナリストに">
+            初の外部コンテストへの応募でしたが、ファイナリストまで登ることができました！
+            <br />
+            また、決勝大会では、公開された場では初めて
+            <Link className="underline" href="https://www.youtube.com/watch?v=rnzmYaCPlzs" target="_blank"
+              rel="noreferrer">自分の制作物についてのプレゼンテーション</Link>
+            を行いました。
+            <br />
+            <Link className="underline" href="https://nnn.ed.jp/news/blog/archives/15912/" target="_blank">N高に掲載されたニュース</Link>
+          </Timeline>
+          <Timeline className="mb-10 ml-4" time="Apr 2023" title="Leasyの初版をリリース、「磁石祭 2023」に出展">
+            私が初めてアプリストアでリリースしたアプリです！
+            <br />
+            単語帳感覚で使える、繰り返し学習などに便利な暗記帳アプリを作りたいと思い、開発しました。
+            <br />
+            今回も磁石祭には
+            <Link className="underline" href="https://nnn.ed.jp/school_festival/2023/plan/#ex-okejlp_3-l8v" target="_blank"
+              rel="noreferrer">オンラインで出展</Link>
+            しました。
+          </Timeline>
+          <Timeline className="mb-5 ml-4" time="Dec 2023 ~ Mar 2024" title="CP Dashboardを開発/公開">
+            キャンパスの時計やタイマー機能を改善しようと思い、それらを1画面にまとめたダッシュボードWebアプリを開発しました。
+            <br />
+            今回は電子工作への挑戦も兼ねて、Arudinoに接続されたセンサーからの温湿度や気圧データを表示する機能も追加しました。
+            <br />
+            一部の機能は生徒や先生のフィードバックを受けて追加しました！
+            <br />
+            <Link className="underline" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank">N高ブログでのインタビュー</Link>
+          </Timeline>
+          <Timeline className="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-300" />
+          <Timeline className="ml-4" time="Apr 2024" title="KADOKAWAドワンゴ情報工科学院(バンタングループ) 専門部に入学" color="bg-red-300">
+            高校卒業後は、より実践的なプログラミングを学ぼうと思い、KADOKAWAドワンゴ情報工科学院に進学しました。
+            <br />
+            また、この頃から、将来はWeb系のエンジニアとして働きたいと思うようになりました。
+          </Timeline>
+          <Timeline className="ml-4" time="Oct 2024" title="株式会社アストラザスタジオにアルバイト採用" color="bg-red-300">
+            現在も学校に通いながら勤務しています。
+          </Timeline>
+        </ol>
+      </section>
+
+      <section className="p-12 grid justify-center items-center">
+        <h2 className="font-bold text-4xl text-center">Contact</h2>
+        <div className="mt-4 flex flex-col md:flex-row flex-wrap gap-4">
+          <Account title="X (Twitter)" icon="" url="https://x.com/CoreiNion/" accountID="@CoreiNion" bgColor="bg-black" textColor="text-white"></Account>
+          <Account title="GitHub" icon="" url="https://github.com/CoreNion" accountID="@CoreNion" bgColor="bg-gray-900" textColor="text-white"></Account>
+        </div>
+      </section>
+    </main>
   );
 }
