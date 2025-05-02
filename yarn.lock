@@ -467,6 +467,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/third-parties@npm:^15.3.1":
+  version: 15.3.1
+  resolution: "@next/third-parties@npm:15.3.1"
+  dependencies:
+    third-party-capital: "npm:1.0.20"
+  peerDependencies:
+    next: ^13.0.0 || ^14.0.0 || ^15.0.0
+    react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+  checksum: 10c0/3a5588d160f8f89864716342cd74434620db13424526c3820e6f2a26b14f237d876bc2ea55f2d7d2bfdb4d14048dda00164570a3822a48d391886b9821fc6b06
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -3011,6 +3023,7 @@ __metadata:
   dependencies:
     "@eslint/eslintrc": "npm:^3.3.1"
     "@iconify/react": "npm:^5.2.1"
+    "@next/third-parties": "npm:^15.3.1"
     "@tailwindcss/postcss": "npm:^4.1.4"
     "@types/node": "npm:^20.17.30"
     "@types/react": "npm:^19.1.2"
@@ -3022,6 +3035,7 @@ __metadata:
     react-dom: "npm:^19.1.0"
     tailwindcss: "npm:^4.1.4"
     typescript: "npm:^5.8.3"
+    use-local-storage-state: "npm:^19.5.0"
   languageName: unknown
   linkType: soft
 
@@ -3676,6 +3690,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"third-party-capital@npm:1.0.20":
+  version: 1.0.20
+  resolution: "third-party-capital@npm:1.0.20"
+  checksum: 10c0/7f45ff156ec9d7e2957a5b39061be22b780ffbd2d93c127252d908e2bff6cdd09f827a95909d457c8096e036f155006a38e355a06ee11cb6d63c7f4b150bbfb0
+  languageName: node
+  linkType: hard
+
 "tinyglobby@npm:^0.2.12":
   version: 0.2.12
   resolution: "tinyglobby@npm:0.2.12"
@@ -3884,6 +3905,16 @@ __metadata:
   dependencies:
     punycode: "npm:^2.1.0"
   checksum: 10c0/4ef57b45aa820d7ac6496e9208559986c665e49447cb072744c13b66925a362d96dd5a46c4530a6b8e203e5db5fe849369444440cb22ecfc26c679359e5dfa3c
+  languageName: node
+  linkType: hard
+
+"use-local-storage-state@npm:^19.5.0":
+  version: 19.5.0
+  resolution: "use-local-storage-state@npm:19.5.0"
+  peerDependencies:
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 10c0/0e3651fbd7892573cb26f7335071acca1de04448db8559ccfe8595dc530a65a938ca128abbd50a85fb13b33b0c3f0f84ff7b9b3418766fec413576b92c43c3a6
   languageName: node
   linkType: hard
 

@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react';
 
 import "./globals.css";
 import Header from "@/components/layout/header";
+import CookieConsent from "@/components/layout/cookie";
 
 const mPlus2 = M_PLUS_2({
   subsets: ["latin"],
@@ -16,6 +17,8 @@ export default function RootLayout({ children, }: Readonly<{
   return (
     <html lang="ja">
       <body className={`${mPlus2.className} antialiased`} >
+        <CookieConsent></CookieConsent>
+
         <Header></Header>
 
         {children}
