@@ -16,7 +16,7 @@ export default function RootLayout({ children, }: Readonly<{
 }>) {
   return (
     <html lang="ja">
-      <body className={`${mPlus2.className} antialiased`} >
+      <body className={`${mPlus2.className} antialiased min-h-screen bg-white text-black grid grid-rows-[1fr_auto] grid-cols-1`}>
         <CookieConsent></CookieConsent>
 
         <Header></Header>
