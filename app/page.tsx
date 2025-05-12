@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import Account from "@/components/top/contact";
 import Timeline from "@/components/top/timeline";
+import Achievement from "@/components/top/arch";
 
 export default function Home() {
   return (
@@ -29,26 +30,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-3 max-w-7xl mx-auto">
-        <div className="grid gap-3">
-          <div>
-            <h2 className="font-bold text-4xl">小原 悠太</h2>
-            <span className="text-xl">KADOKAWAドワンゴ情報工科学院 専門部所属</span>
-          </div>
+      <section className="px-6 py-12 md:p-12 xl:p-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 max-w-7xl mx-auto">
+        <div className="flex flex-col gap-2">
+          <h2 className="font-bold text-4xl">小原 悠太</h2>
+          <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br/>専門部所属</span>
+          <span className="w-fit rounded-full border py-1 px-2">Web制作会社でアルバイト中</span>
 
-          <p>
+          <p className="mt-4">
             私の作品では、日頃の生活の中で「あったらいいな」と思ったアイデアを、さまざまな技術を活用してカタチにしています。<br />
             少しでも人の役に立ってほしいという思いから、基本的にオープンソース/無料で公開しています。
           </p>
         </div>
 
-        <div>
-          <Image
-            src="/profile.svg"
-            alt="Profile Picture"
-            width={400}
-            height={400}
-          />
+        <div className="grid gap-4">
+          <Achievement title={"出退勤アプリ (社内ツール)"} description={"バイト先の出退勤を管理するために開発した内部ツール。"}
+            icon={<Image src={"/cp-dashboard/icon.svg"} alt={"出退勤アプリのアイコン"} width={"400"} height={"400"}></Image>}>
+          </Achievement>
+          <Achievement title={"Campus Dashboard"} description={"必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。"} url="https://cpd.cnion.dev/"
+            icon={<Image src={"/cp-dashboard/icon.svg"} alt={"Campus Dashboardのアイコン"} width={"400"} height={"400"}></Image>}>
+          </Achievement>
+          <Achievement title={"Open FileTrucker"} description={"どんな端末でも使える、サーバーを介さないファイル共有アプリ。"} url="/trucker"
+            icon={<Image src={"/trucker/icon.svg"} alt={"FileTruckerのアイコン"} width={"400"} height={"400"}></Image>}>
+          </Achievement>
         </div>
       </section>
 
