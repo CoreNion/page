@@ -9,8 +9,11 @@ export default function Home() {
   return (
     <main className="bg-white text-black">
       <section className="min-h-screen bg-[#232F45] text-white">
-        <div className="min-h-screen flex flex-row flex-wrap-reverse items-center justify-around content-center gap-4 max-w-7xl mx-auto">
-          <div className="grid gap-2 text-center">
+        <div className={`min-h-screen mx-auto max-w-[1800px]
+                         max-lg:flex max-lg:flex-col-reverse justify-center gap-4
+                         max-lg:landscape:grid lg:grid grid-cols-2 grid-rows-1 items-center 2xl:landscape:items-end`}>
+
+          <div className="h-full grid content-center gap-2 text-center">
             <h1 className="font-bold text-6xl">CoreNion</h1>
             <h2 className="font-medium text-4xl">Yuta Obara</h2>
 
@@ -24,8 +27,10 @@ export default function Home() {
           <Image
             src="/profile.svg"
             alt="Profile Picture"
-            width={400}
-            height={400}
+            priority={true}
+            height={1000}
+            width={1000}
+            className="max-lg:portrait:max-h-[60vh] max-lg:mx-auto max-lg:portrait:w-1/2 max-sm:portrait:w-3/4 max-lg:landscape:h-[80vh] max-sm:mt-8"
           />
         </div>
       </section>
@@ -33,7 +38,7 @@ export default function Home() {
       <section className="px-6 py-12 md:p-12 xl:p-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 max-w-7xl mx-auto">
         <div className="flex flex-col gap-2">
           <h2 className="font-bold text-4xl">小原 悠太</h2>
-          <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br/>専門部所属</span>
+          <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br />専門部所属</span>
           <span className="w-fit rounded-full border py-1 px-2">Web制作会社でアルバイト中</span>
 
           <p className="mt-4">
