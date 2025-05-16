@@ -165,8 +165,8 @@ export default function Home() {
       <section className="p-12 grid justify-center items-center">
         <h2 className="font-bold text-4xl text-center">Contact</h2>
         <div className="mt-4 flex flex-col md:flex-row flex-wrap gap-4">
-          <Account title="X (Twitter)" icon="" url="https://x.com/CoreiNion/" accountID="@CoreiNion" bgColor="bg-black" textColor="text-white"></Account>
-          <Account title="GitHub" icon="" url="https://github.com/CoreNion" accountID="@CoreNion" bgColor="bg-gray-900" textColor="text-white"></Account>
+          <Account title="X (Twitter)" icon="carbon:logo-x" url="https://x.com/CoreiNion/" accountID="@CoreiNion" bgColor="bg-black" textColor="text-white"></Account>
+          <Account title="GitHub" icon="carbon:logo-github" url="https://github.com/CoreNion" accountID="@CoreNion" bgColor="bg-gray-900" textColor="text-white"></Account>
         </div>
       </section>
     </main>
