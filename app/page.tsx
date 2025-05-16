@@ -5,6 +5,31 @@ import Account from "@/components/top/contact";
 import Timeline from "@/components/top/timeline";
 import Achievement from "@/components/top/arch";
 
+export const metadata = {
+  title: 'About CoreNion',
+  description: "CoreNion / Yuta Obara's profile page.",
+  openGraph: {
+    title: 'About CoreNion',
+    description: "CoreNion / Yuta Obara's profile page.",
+    url: 'https://cnion.dev/',
+    siteName: "CoreNion's Page",
+    images: [
+      {
+        url: '/profile.png',
+        width: 1000,
+        height: 1000,
+        alt: "CoreNion's profile picture",
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    site: '@CoreiNion',
+    creator: '@CoreiNion',
+  },
+};
+
 export default function Home() {
   return (
     <main className="bg-white text-black">

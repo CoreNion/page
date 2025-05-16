@@ -11,6 +11,10 @@ const mPlus2 = M_PLUS_2({
   display: "swap",
 });
 
+export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
+}
+
 export default function RootLayout({ children, }: Readonly<{
   children: React.ReactNode;
 }>) {
