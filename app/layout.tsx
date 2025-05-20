@@ -21,8 +21,6 @@ export default function RootLayout({ children, }: Readonly<{
   return (
     <html lang="ja">
       <body className={`${mPlus2.className} antialiased min-h-screen bg-white text-black grid grid-rows-[1fr_auto] grid-cols-1`}>
-        <CookieConsent></CookieConsent>
-
         <Header></Header>
 
         {children}
@@ -43,9 +41,7 @@ export default function RootLayout({ children, }: Readonly<{
               <Icon icon="carbon:logo-x" height="40px"></Icon>
             </Link>
 
-            <button className="bg-yellow-100 text-black rounded-full p-2">
-              <Icon icon="carbon:data-analytics" height="25px"></Icon>
-            </button>
+            <CookieConsent></CookieConsent>
           </nav>
         </footer>
       </body>

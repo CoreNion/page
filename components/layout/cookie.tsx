@@ -31,24 +31,24 @@ export default function CookieConsent() {
 
   const handleAccept = () => {
     setConsent(true);
+    setShowDialog(false);
   };
 
   const handleDecline = () => {
     setConsent(false);
+    setShowDialog(false);
   };
 
-  if (!showDialog) {
-    if (consent) {
-      return <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTAG_ID!}></GoogleTagManager>;
-    } else {
-      return null;
-    }
-  } else {
-    return (
-      <div className="fixed z-50 bottom-0 left-0 right-0 m-4 p-3 max-w-5xl rounded-2xl bg-[#222b3adb] backdrop-blur-xs text-white max-md:text-center text-sm">
+  return (
+    <>
+      <button className="cursor-pointer bg-yellow-100 hover:bg-yellow-300 transition-all duration-300 text-black rounded-full p-2 " onClick={() => setShowDialog(true)}>
+        <Icon icon="carbon:data-analytics" height="25px"></Icon>
+      </button>
+      {consent ? <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTAG_ID!}></GoogleTagManager> : null}
+      {showDialog && <div className="fixed z-50 bottom-0 left-0 right-0 m-4 p-3 max-w-5xl rounded-2xl bg-[#222b3adb] backdrop-blur-xs text-white max-md:text-center text-sm">
         <strong className="font-bold">当サイトでは、使用状況のデータの収集のために解析ツールなどを使用することがあります。</strong>
         <p>
-          このデータは匿名で収集されており、個人を特定するものではありません。データの収集に同意される場合は、「同意」ボタンを押してください。
+          このデータは匿名で収集されており、個人を特定するものではありません。{ consent === undefined ? "データの収集に同意される場合は、「同意」ボタンを押してください。" : `現在の設定では、データの収集${consent ? "に同意しています。" : "を収集を拒否しています。"}` }
           <br />
           この設定は下部にある
           <Icon icon="carbon:data-analytics" width="1.2em" className="inline-block" />
@@ -61,6 +61,7 @@ export default function CookieConsent() {
           拒否
         </button>
       </div>
-    );
-  }
+      }
+    </>
+  );
 }
