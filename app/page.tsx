@@ -43,7 +43,7 @@ export default function Home() {
             <h2 className="font-medium text-4xl">Yuta Obara</h2>
 
             <p className="font-light text-xl my-3">
-              Student Programmer
+              20yo | Student Programmer
               <br />
               Interested in Web Development
             </p>
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-12 md:p-12 xl:p-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 max-w-7xl mx-auto">
+      <section className="px-4 py-12 md:p-12 xl:p-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 max-w-7xl mx-auto">
         <div className="flex flex-col gap-2">
           <h2 className="font-bold text-4xl">小原 悠太</h2>
           <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br />専門部所属</span>
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-12 bg-slate-900 text-white grid justify-center items-center">
+      <section className="pl-6 pr-4 py-12 md:p-12 bg-slate-900 text-white grid justify-center items-center">
         <h2 className="font-bold text-4xl text-center">Timeline</h2>
 
         <ol className="relative border-l-4 border-green-200">
@@ -162,11 +162,16 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className="p-12 grid justify-center items-center">
+      <section className="px-4 py-12 md:p-12 grid justify-center items-center">
         <h2 className="font-bold text-4xl text-center">Contact</h2>
-        <div className="mt-4 flex flex-col md:flex-row flex-wrap gap-4">
-          <Account title="X (Twitter)" icon="carbon:logo-x" url="https://x.com/CoreiNion/" accountID="@CoreiNion" bgColor="bg-black" textColor="text-white"></Account>
-          <Account title="GitHub" icon="carbon:logo-github" url="https://github.com/CoreNion" accountID="@CoreNion" bgColor="bg-gray-900" textColor="text-white"></Account>
+        <p className="my-3 text-center"> 
+          ＊メールアドレスなどの詳細は、 
+          <Link href="/accounts" className="underline">各アカウント一覧</Link>
+          を参照してください。 
+        </p>
+        <div className="mt-4 flex flex-row flex-wrap gap-4 justify-center">
+          <Account title="X (Twitter)" icon="carbon:logo-x" url="https://x.com/CoreiNion/" accountID="@CoreiNion" bgColor="bg-white border border-grey-200" textColor="text-black"></Account>
+          <Account title="GitHub" icon="carbon:logo-github" url="https://github.com/CoreNion" accountID="@CoreNion" bgColor="bg-gray-100 border border-grey-200" textColor="text-black"></Account>
         </div>
       </section>
     </main>
