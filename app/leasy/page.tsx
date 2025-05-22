@@ -105,8 +105,8 @@ export default function LeasyPage() {
         </div>
         <div className="flex flex-row justify-center gap-5 m-5 flex-wrap">
           <AppDownload className="flex-1" title="Windows" version="Windows 10 以降" desc="x64のみ対応しています。" id="windows">
-            <a href="https://www.microsoft.com/store/apps/9PNXGM6NPF1Q" target="_blank" rel="noreferrer">
-              <Image className="h-14 w-auto" src="/assets/store/appstore_mac.svg" alt="Microsoft Store" width={160} height={55} />
+            <a href="https://apps.microsoft.com/detail/9pnxgm6npf1q?referrer=appbadge&launch=true&mode=full" target="_blank" rel="noreferrer">
+              <Image className="h-14 w-auto" src="/assets/store/ms.svg" alt="Microsoft Storeからダウンロード" width={160} height={55} />
             </a>
           </AppDownload>
           <AppDownload className="flex-1" title="macOS" version="macOS 11.0 以降" desc="iCloud Driveによるデータの同期に対応しています。" id="macos">
