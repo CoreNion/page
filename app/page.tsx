@@ -73,14 +73,14 @@ export default function Home() {
         </div>
 
         <div className="grid gap-4">
-          <Achievement title={"出退勤アプリ (社内ツール)"} description={"バイト先の出退勤を管理するために開発した内部ツール。"}
-            icon={<Image src={"/cp-dashboard/icon.svg"} alt={"出退勤アプリのアイコン"} width={"400"} height={"400"}></Image>}>
-          </Achievement>
           <Achievement title={"Campus Dashboard"} description={"必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。"} url="https://cpd.cnion.dev/"
             icon={<Image src={"/cp-dashboard/icon.svg"} alt={"Campus Dashboardのアイコン"} width={"400"} height={"400"}></Image>}>
           </Achievement>
           <Achievement title={"Open FileTrucker"} description={"どんな端末でも使える、サーバーを介さないファイル共有アプリ。"} url="/trucker"
             icon={<Image src={"/trucker/icon.svg"} alt={"FileTruckerのアイコン"} width={"400"} height={"400"}></Image>}>
+          </Achievement>
+          <Achievement title={"Leasy"} description={"「あなただけの」使いやすい暗記帳で学習しよう。"} url="/leasy"
+            icon={<Image src={"/leasy/icon.svg"} alt={"Leasyのアイコン"} width={"400"} height={"400"}></Image>}>
           </Achievement>
         </div>
       </section>

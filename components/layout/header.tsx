@@ -36,8 +36,9 @@ export default function Header() {
               ${isMenuOpen ? "opacity-100 translate-y-0 pointer-events-auto"
                 : "opacity-0 -translate-y-4 pointer-events-none"}`
           :"flex justify-end gap-3 pr-5 py-3"}>
-        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="https://blog.cnion.dev/">Blog</Link>
         <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/archivtter">Archivtter</Link>
+        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/trucker">FileTrucker</Link>
+        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/leasy">Leasy</Link>
       </nav>
     </header>
   );
