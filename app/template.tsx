@@ -14,7 +14,6 @@ export default function Template({ children }: { children: React.ReactNode }) {
         animate={{ clipPath: 'circle(150%)' }}
         exit={{ clipPath: 'circle(0%)' }}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        className='grid grid-cols-[1fr]'
         >
         {children}
 
