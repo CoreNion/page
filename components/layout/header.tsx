@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed z-50 top-0 left-0 right-0 bg-white text-black border border-gray-300 shadow m-5 rounded-full grid grid-cols-[repeat(2,auto)] items-center justify-between">
+    <header className="fixed z-50 top-0 left-0 right-0 bg-white text-black border border-gray-300 shadow m-3 md:m-5 rounded-full grid grid-cols-[repeat(2,auto)] items-center justify-between">
       <Link className="font-bold text-xl pl-5 py-3" href="/">CoreNion</Link>
 
       {
