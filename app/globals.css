@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@config '../tailwind.config.js';
+
+/* 
+ React-TailwindCSS-DatepickerのTailwindCSS v4で発生する問題の回避策
+  https://github.com/onesine/react-tailwindcss-datepicker/issues/308
+*/
+.opacity-1 {
+     opacity: 100%;
+ }

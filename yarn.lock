@@ -1383,6 +1383,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dayjs@npm:^1.11.13":
+  version: 1.11.13
+  resolution: "dayjs@npm:1.11.13"
+  checksum: 10c0/a3caf6ac8363c7dade9d1ee797848ddcf25c1ace68d9fe8678ecf8ba0675825430de5d793672ec87b24a69bf04a1544b176547b2539982275d5542a7955f35b7
+  languageName: node
+  linkType: hard
+
 "debug@npm:^3.2.7":
   version: 3.2.7
   resolution: "debug@npm:3.2.7"
@@ -3028,11 +3035,13 @@ __metadata:
     "@types/node": "npm:^20.17.30"
     "@types/react": "npm:^19.1.2"
     "@types/react-dom": "npm:^19.1.2"
+    dayjs: "npm:^1.11.13"
     eslint: "npm:^9.25.1"
     eslint-config-next: "npm:15.3.1"
     next: "npm:15.3.1"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
+    react-tailwindcss-datepicker: "npm:^2.0.0"
     tailwindcss: "npm:^4.1.4"
     typescript: "npm:^5.8.3"
     use-local-storage-state: "npm:^19.5.0"
@@ -3166,6 +3175,16 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
+  languageName: node
+  linkType: hard
+
+"react-tailwindcss-datepicker@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "react-tailwindcss-datepicker@npm:2.0.0"
+  peerDependencies:
+    dayjs: ^1.11.12
+    react: ^17.0.2 || ^18.2.0 || ^19.0.0
+  checksum: 10c0/6c8d0a8873d878677c7706bf89174a740fc0ba25b440159b06ca89efc2776a21767d961ee6133086e413e73978f1befc5534b70482b0acce5efa4ac981bb9a90
   languageName: node
   linkType: hard
 
