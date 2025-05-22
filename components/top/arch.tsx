@@ -21,7 +21,7 @@ export default function Achievement({ icon, title, description, url }: Achieveme
 
   return (
     url ? (
-      <Link className="p-4 bg-blue-50 rounded-2xl grid gap-1 shadow-md hover:shadow-lg transition-all duration-200" href={url}>
+      <Link className="p-4 bg-blue-50 rounded-2xl grid gap-1 shadow-md hover:shadow-lg transition-all duration-200" href={url} target="_blank">
         {content}
       </Link>
     ) : (

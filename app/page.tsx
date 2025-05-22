@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-12 md:p-12 xl:p-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 max-w-7xl mx-auto">
+      <section className="px-4 py-12 md:px-8 md:py-12 xl:py-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 max-w-7xl mx-auto">
         <div className="flex flex-col gap-2">
           <h2 className="font-bold text-4xl">小原 悠太</h2>
           <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br />専門部所属</span>
