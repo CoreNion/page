@@ -39,7 +39,7 @@ function OSLink({ color, text, hoverColor, label, href }:
 export default function LeasyPage() {
   return (
     <main className="bg-[#faf7f5] text-black">
-      <section className="min-h-screen bg-gradient-to-r from-pink-100 to-teal-100 flex items-center justify-center pt-16">
+      <section className="min-h-screen bg-gradient-to-r from-pink-100 to-teal-100 flex items-center justify-center py-16">
         <div className="max-w-screen-2xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-5">
           <div className="order-2 lg:order-1 hidden lg:flex justify-center">
             <Image className="drop-shadow-xl h-[60vh] object-contain" src="/leasy/screen/sc1.png" alt="Leasy スクリーンショット" width={400} height={800} />
@@ -50,6 +50,7 @@ export default function LeasyPage() {
               <div className="flex flex-col items-center lg:items-start gap-2">
                 <h1 className="text-5xl font-bold text-black text-center lg:text-left">Leasy</h1>
                 <p className="text-lg text-black text-center lg:text-left">「あなただけの」暗記帳で学習しよう！</p>
+                <Link className="underline text-blue-700 hover:text-blue-900" href="/leasy/privacy">プライバシーポリシー</Link>
               </div>
             </div>
             <div className="flex flex-wrap gap-3 justify-center">
@@ -60,16 +61,15 @@ export default function LeasyPage() {
               <OSLink color="bg-yellow-400" text="text-black" hoverColor="hover:bg-yellow-500" label="Web (PWA)" href="#web" />
             </div>
             <a className="px-4 py-2 rounded-lg bg-gray-800 text-white font-semibold text-center transition hover:bg-gray-900 w-full max-w-xs" href="https://github.com/CoreNion/Leasy" target="_blank" rel="noreferrer">GitHub</a>
-            <Link className="underline text-blue-700 hover:text-blue-900 mt-2" href="/leasy/privacy">プライバシーポリシー</Link>
           </div>
         </div>
       </section>
 
-      <div className="relative lg:hidden -top-28 sm:-top-40 -mb-28 sm:-mb-40">
+      <div className="relative lg:hidden -top-20 sm:-top-40 -mb-28 sm:-mb-40">
         <Image className="m-auto max-w-xs drop-shadow-2xl" src="/leasy/screen/sc1.png" alt="スクリーンショット" width={400} height={800} />
       </div>
 
-      <section className="mx-auto my-7 max-w-screen-2xl mb-10">
+      <section className="mx-auto max-w-screen-2xl my-12">
         <h2 className="text-4xl font-bold text-center text-black">主な特徴</h2>
         <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-7 m-5">
           <AppFeature title="使いやすい暗記帳！">
@@ -91,35 +91,35 @@ export default function LeasyPage() {
 
       <section className="mx-auto my-7 max-w-6xl">
         <h2 className="text-4xl font-bold text-center text-black m-5">Downloads</h2>
-        <div className="flex flex-row justify-center gap-5 m-3 flex-wrap">
-          <AppDownload title="Android" version="Android 8.1 以降" desc="Chromebookにもインストール可能です。" id="android">
+        <div className="flex flex-row justify-center gap-5 m-5 flex-wrap">
+          <AppDownload className="flex-1" title="Android" version="Android 8.1 以降" desc="Chromebookにもインストール可能です。" id="android">
             <a href="https://play.google.com/store/apps/details?id=com.corenion.mimosa&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" rel="noreferrer">
               <Image className="h-14 w-auto" alt="Google Play で手に入れよう" src="/assets/store/play.svg" width={160} height={55} />
             </a>
           </AppDownload>
-          <AppDownload title="iOS" version="iOS 14 以降" desc="iCloud Driveによるデータの同期に対応しています。" id="ios">
+          <AppDownload className="flex-1" title="iOS" version="iOS 14 以降" desc="iCloud Driveによるデータの同期に対応しています。" id="ios">
             <a href="https://apps.apple.com/jp/app/leasy/id6448246576?itsct=apps_box_badge&amp;itscg=30200" target="_blank" rel="noreferrer">
               <Image className="h-14 w-auto" src="/assets/store/appstore.svg" alt="Download on the App Store" width={160} height={55} />
             </a>
           </AppDownload>
         </div>
-        <div className="flex flex-row justify-center gap-5 m-3 flex-wrap">
-          <AppDownload title="Windows" version="Windows 10 以降" desc="x64のみ対応しています。" id="windows">
+        <div className="flex flex-row justify-center gap-5 m-5 flex-wrap">
+          <AppDownload className="flex-1" title="Windows" version="Windows 10 以降" desc="x64のみ対応しています。" id="windows">
             <a href="https://www.microsoft.com/store/apps/9PNXGM6NPF1Q" target="_blank" rel="noreferrer">
               <Image className="h-14 w-auto" src="/assets/store/appstore_mac.svg" alt="Microsoft Store" width={160} height={55} />
             </a>
           </AppDownload>
-          <AppDownload title="macOS" version="macOS 11.0 以降" desc="iCloud Driveによるデータの同期に対応しています。" id="macos">
+          <AppDownload className="flex-1" title="macOS" version="macOS 11.0 以降" desc="iCloud Driveによるデータの同期に対応しています。" id="macos">
             <a href="https://apps.apple.com/jp/app/leasy/id6448246576?itsct=apps_box_badge&amp;itscg=30200" target="_blank" rel="noreferrer">
               <Image className="h-14 w-auto" src="/assets/store/appstore_mac.svg" alt="Download on the Mac App Store" width={160} height={55} />
             </a>
           </AppDownload>
         </div>
-         <div className="flex flex-row justify-center gap-5 m-3 flex-wrap">
+        <div className="flex flex-row justify-center gap-5 m-5 flex-wrap">
           <AppDownload className="flex-1" title={"Web (PWA)"} version={"Preview"} desc={"ブラウザ(ウェブ)上で完結するバージョンです。PWA版を開いた後に共有ボタンなどからホーム画面に追加することで、アプリのように使えます。\n安定性の都合上、アプリ版の利用を推奨しますが、アプリをインストールできない場合などはこちらをご利用ください。\nなお、バックアップ機能を利用し、後からアプリ版に学習データを移行することは可能です。"} id={"web"}>
             <a className="px-4 py-2 rounded-lg bg-yellow-400 text-black font-semibold text-center transition hover:bg-yellow-500" href="https://leasy-pwa.cnion.dev/" target="_blank" rel="noreferrer">PWA版を開く</a>
           </AppDownload>
-         </div>
+        </div>
       </section>
     </main>
   );
