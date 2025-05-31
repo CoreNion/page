@@ -43,9 +43,10 @@ export default function Home() {
             <h2 className="font-medium text-4xl">Yuta Obara</h2>
 
             <p className="font-light text-xl my-3">
-              20yo | Student Programmer
+              Student Programmer
               <br />
-              Interested in Web Development
+              Interested in Web Development.<br />
+              (Next,js, React, etc...)
             </p>
           </div>
 
@@ -60,23 +61,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-12 md:px-8 md:py-12 xl:py-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 max-w-7xl mx-auto">
+      <section className="px-4 py-12 md:px-8 md:py-12 xl:py-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-8 max-w-[1400px] mx-auto">
         <div className="flex flex-col gap-2">
           <h2 className="font-bold text-4xl">小原 悠太</h2>
-          <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br />専門部所属</span>
+          <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br />専門部所属 2年生 (3年制, 27卒)</span>
           <span className="w-fit rounded-full border py-1 px-2">Web制作会社でアルバイト中</span>
 
           <p className="mt-4">
-            私の作品では、日頃の生活の中で「あったらいいな」と思ったアイデアを、さまざまな技術を活用してカタチにしています。<br />
-            少しでも人の役に立ってほしいという思いから、基本的にオープンソース/無料で公開しています。
+            物心付いた頃からパソコンに触れ、中学生の頃にはプログラミングに興味を持ち始めました。
+            <br />
+            高校生の頃は、日頃の生活の中で「あったらいいな」と思ったアイデアを、さまざまな技術を活用してカタチにすることに挑戦してきました。
+          </p>
+          <p>
+            専門学校に入学してからは、実務や学校での学びを通して、より実践的なスキルの習得に励んでいます。
+            <br />
+            現在は、主にWebアプリケーションの開発に興味を持ち、Next.jsやReactなどの勉強をしています。
           </p>
         </div>
 
         <div className="grid gap-4">
-          <Achievement title={"Campus Dashboard"} description={"必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。"} url="https://cpd.cnion.dev/"
+          <Achievement title={"Campus Dashboard"} description={"必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。\nキャンパスで使う時計やタイマーなどを、一つのサイトにまとめて使いやすくしたいと思い開発しました。"} url="https://cpd.cnion.dev/"
             icon={<Image src={"/cp-dashboard/icon.svg"} alt={"Campus Dashboardのアイコン"} width={"400"} height={"400"}></Image>}>
           </Achievement>
-          <Achievement title={"Open FileTrucker"} description={"どんな端末でも使える、サーバーを介さないファイル共有アプリ。"} url="/trucker"
+          <Achievement title={"Open FileTrucker"} description={"どんな端末でも使える、サーバーを介さないファイル共有アプリ。\n多デバイス間でのファイル共有に不便を感じたことから生まれました。"} url="/trucker"
             icon={<Image src={"/trucker/icon.svg"} alt={"FileTruckerのアイコン"} width={"400"} height={"400"}></Image>}>
           </Achievement>
           <Achievement title={"Leasy"} description={"「あなただけの」使いやすい暗記帳で学習しよう。"} url="/leasy"
@@ -90,7 +97,7 @@ export default function Home() {
 
         <ol className="relative border-l-4 border-green-200">
           <Timeline className="mb-5 ml-4" time="Aug 2020" title="Archivtterを公開">
-            Xのツイート検索コマンド(since/until)をより簡単に使えるようにするために開発しました。
+            X/旧Twitterのツイート検索コマンド(since/until)をより簡単に使えるようにするために開発しました。
             <br />
             また、
             <Link className="underline" href="https://progedu.github.io/webappcontest/2020/summer/result/" target="_blank"
@@ -109,11 +116,9 @@ export default function Home() {
           </Timeline>
           <Timeline className="mb-3 ml-4" time="Apr 2021" title="N高等学校に入学、通学コースに所属" color="bg-zinc-400" />
           <Timeline className="mb-10 ml-4" time="Oct 2021" title="nnnCheckerを公開">
-            初めて公開した、サーバーを用いた自作のWeb Appです。
+            初めて公開した、サーバーを用いた自作のWebアプリです。
             <br />
-            N/S高生であることを手軽に確実に証明できるようにするために作りました。
-            <br />
-            今回は、N予備校でのプログラミング(Web系)講座での学習を生かし、開発しました。
+            N/S高生であることを手軽に確実に証明できるようにするために開発しました。
           </Timeline>
           <Timeline className="mb-10 ml-4" time="Apr 2022" title="Open FileTruckerの初版をリリース、「磁石祭 2022」に出展">
             Windows PCからiPhoneなど異なるプラットフォーム間でのファイル共有に不便を感じ、ローカルネットワークを生かしたシンプルな仕様で共有できるようにするために開発しました。
@@ -158,6 +163,14 @@ export default function Home() {
           </Timeline>
           <Timeline className="ml-4" time="Oct 2024" title="株式会社アストラザスタジオにアルバイト採用" color="bg-red-300">
             現在も学校に通いながら勤務しています。
+          </Timeline>
+          <Timeline className="ml-4" time="Mar 2025" title="社内向けの出退勤管理Webアプリを開発">
+            社内の出退勤管理をより簡単に行えるようにするために、Next.js / Reactを用いて開発しました。
+            <br />
+            静的なWebアプリとして開発し、データベースにはSqlite.wasmを使用しました。
+          </Timeline>
+          <Timeline className="ml-4" time="Mar 2025" title="プロフィールサイトをNext.js / Reactに移行">
+            サイトデザインのリニューアルも行いました。
           </Timeline>
         </ol>
       </section>
