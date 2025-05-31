@@ -15,7 +15,7 @@ export default function Achievement({ icon, title, description, url }: Achieveme
         <div className="w-12 h-12 overflow-hidden rounded-lg">{icon}</div>
         <h3 className="font-bold text-xl">{title}</h3>
       </div>
-      <p>{description}</p>
+      <p className="whitespace-pre-wrap">{description}</p>
     </>
   );
 
