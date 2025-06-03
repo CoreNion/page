@@ -35,8 +35,14 @@ export default function CookieConsent() {
   };
 
   const handleDecline = () => {
+    const retracted = consent !== undefined;
     setConsent(false);
     setShowDialog(false);
+
+    // 同意を取り消した場合、ページをリロードして解析タグを確実に削除
+    if (retracted) {
+      window.location.reload(); 
+    }
   };
 
   return (
