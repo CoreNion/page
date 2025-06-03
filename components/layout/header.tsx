@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="fixed z-50 top-0 left-0 right-0 bg-white text-black border border-gray-300 shadow m-3 md:m-5 rounded-full grid grid-cols-[repeat(2,auto)] items-center justify-between">
-      <Link className="font-bold text-xl pl-5 py-3" href="/">CoreNion</Link>
+      <Link className="font-bold text-xl pl-5 py-3" href="/" prefetch={false}>CoreNion</Link>
 
       {
         isMobile && (
@@ -36,9 +36,9 @@ export default function Header() {
               ${isMenuOpen ? "opacity-100 translate-y-0 pointer-events-auto"
                 : "opacity-0 -translate-y-4 pointer-events-none"}`
           :"flex justify-end gap-3 pr-5 py-3"}>
-        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/archivtter">Archivtter</Link>
-        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/trucker">FileTrucker</Link>
-        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/leasy">Leasy</Link>
+        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/archivtter" prefetch={false}>Archivtter</Link>
+        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/trucker" prefetch={false}>FileTrucker</Link>
+        <Link className="max-md:px-5 max-md:py-3 transition-all duration-300 max-sm:hover:bg-slate-200" href="/leasy" prefetch={false}>Leasy</Link>
       </nav>
     </header>
   );

@@ -19,6 +19,7 @@ const Account: FC<Props> = ({ className, title, icon, url, accountID, bgColor, t
         href={url}
         className="grid grid-cols-[auto_1fr] gap-2 items-center"
         target="_blank"
+        prefetch={false}
       >
         <Icon icon={icon} height="40px" /> 
         <div className="grid grid-cols-1 gap-1">

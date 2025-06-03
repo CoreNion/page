@@ -29,15 +29,15 @@ export default function RootLayout({ children, }: Readonly<{
           <div>
             <span>© 2025 CoreNion</span>
             <br />
-            <Link className="underline text-white mr-2" href="/privacy" target="_blank">Privacy</Link>
-            <Link className="underline text-blue-200" href="https://github.com/CoreNion/page" target="_blank">Source Code</Link>
+            <Link className="underline text-white mr-2" href="/privacy" target="_blank" prefetch={false}>Privacy</Link>
+            <Link className="underline text-blue-200" href="https://github.com/CoreNion/page" target="_blank" prefetch={false}>Source Code</Link>
           </div>
 
           <nav className="grid grid-cols-[repeat(3,auto)] justify-end items-center gap-4">
-            <Link href="https://github.com/CoreNion">
+            <Link href="https://github.com/CoreNion" prefetch={false}>
               <Icon icon="carbon:logo-github" height="40px"></Icon>
             </Link>
-            <Link href="https://x.com/CoreiNion">
+            <Link href="https://x.com/CoreiNion" prefetch={false}>
               <Icon icon="carbon:logo-x" height="40px"></Icon>
             </Link>
 
