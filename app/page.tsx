@@ -94,7 +94,7 @@ export default function Home() {
             <br />
             また、
             <Link className="underline" href="https://progedu.github.io/webappcontest/2020/summer/result/" target="_blank"
-              rel="noreferrer">動くWEBページコンテスト 2020夏</Link>
+              rel="noreferrer" prefetch={false}>動くWEBページコンテスト 2020夏</Link>
             にも応募しました。
           </Timeline>
           <Timeline className="mb-5 ml-4" time="Jan 2021" title="Ny0bi Toolの初版をリリース">
@@ -104,7 +104,7 @@ export default function Home() {
             <br />
             また、この作品は同年4月に開催された「磁石祭 2021」(N/S高・N中等部文化祭)のプログラミングブースに出展し、
             <Link className="underline" href="https://x.com/nhigh_info/status/1386241067222249473" target="_blank"
-              rel="noreferrer">N/S高の公式X</Link>
+              rel="noreferrer" prefetch={false}>N/S高の公式X</Link>
             などでも紹介されました。
           </Timeline>
           <Timeline className="mb-3 ml-4" time="Apr 2021" title="N高等学校に入学、通学コースに所属" color="bg-zinc-400" />
@@ -119,17 +119,17 @@ export default function Home() {
             Windows PCからiPhoneなど異なるプラットフォーム間でのファイル共有に不便を感じ、ローカルネットワークを生かしたシンプルな仕様で共有できるようにするために開発しました。
             <br />
             磁石祭には今回はCoreNion独自の企画で<Link className="underline" href="https://nnn.ed.jp/school_festival/2022/plan/jqv9kyeuht-b/"
-              target="_blank" rel="noreferrer">オンラインで出展</Link>しました。
+              target="_blank" rel="noreferrer" prefetch={false}>オンラインで出展</Link>しました。
           </Timeline>
           <Timeline className="mb-8 ml-4" time="Sep 2022 ~ Oct 2022" title="Open FileTruckerをアプリ甲子園へ提出、ファイナリストに">
             初の外部コンテストへの応募でしたが、ファイナリストまで登ることができました！
             <br />
             また、決勝大会では、公開された場では初めて
             <Link className="underline" href="https://www.youtube.com/watch?v=rnzmYaCPlzs" target="_blank"
-              rel="noreferrer">自分の制作物についてのプレゼンテーション</Link>
+              rel="noreferrer" prefetch={false}>自分の制作物についてのプレゼンテーション</Link>
             を行いました。
             <br />
-            <Link className="underline" href="https://nnn.ed.jp/news/blog/archives/15912/" target="_blank">N高に掲載されたニュース</Link>
+            <Link className="underline" href="https://nnn.ed.jp/news/blog/archives/15912/" target="_blank" prefetch={false}>N高に掲載されたニュース</Link>
           </Timeline>
           <Timeline className="mb-10 ml-4" time="Apr 2023" title="Leasyの初版をリリース、「磁石祭 2023」に出展">
             私が初めてアプリストアでリリースしたアプリです！
@@ -138,7 +138,7 @@ export default function Home() {
             <br />
             今回も磁石祭には
             <Link className="underline" href="https://nnn.ed.jp/school_festival/2023/plan/#ex-okejlp_3-l8v" target="_blank"
-              rel="noreferrer">オンラインで出展</Link>
+              rel="noreferrer" prefetch={false}>オンラインで出展</Link>
             しました。
           </Timeline>
           <Timeline className="mb-5 ml-4" time="Dec 2023 ~ Mar 2024" title="CP Dashboardを開発/公開">
@@ -148,7 +148,7 @@ export default function Home() {
             <br />
             一部の機能は生徒や先生のフィードバックを受けて追加しました！
             <br />
-            <Link className="underline" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank">N高ブログでのインタビュー</Link>
+            <Link className="underline" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank" prefetch={false}>N高ブログでのインタビュー</Link>
           </Timeline>
           <Timeline className="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-300" />
           <Timeline className="ml-4" time="Apr 2024" title="KADOKAWAドワンゴ情報工科学院(バンタングループ) 専門部に入学" color="bg-red-300">
@@ -166,7 +166,7 @@ export default function Home() {
         <h2 className="font-bold text-4xl text-center">Contact</h2>
         <p className="my-3 text-center"> 
           ＊メールアドレスなどの詳細は、 
-          <Link href="/accounts" className="underline">各アカウント一覧</Link>
+          <Link href="/accounts" className="underline" prefetch={false}>各アカウント一覧</Link>
           を参照してください。 
         </p>
         <div className="mt-4 flex flex-row flex-wrap gap-4 justify-center">

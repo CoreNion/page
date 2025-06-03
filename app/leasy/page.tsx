@@ -50,7 +50,7 @@ export default function LeasyPage() {
               <div className="flex flex-col items-center lg:items-start gap-2">
                 <h1 className="text-5xl font-bold text-black text-center lg:text-left">Leasy</h1>
                 <p className="text-lg text-black text-center lg:text-left">「あなただけの」暗記帳で学習しよう！</p>
-                <Link className="underline text-blue-700 hover:text-blue-900" href="/leasy/privacy">プライバシーポリシー</Link>
+                <Link className="underline text-blue-700 hover:text-blue-900" href="/leasy/privacy" prefetch={false}>プライバシーポリシー</Link>
               </div>
             </div>
             <div className="flex flex-wrap gap-3 justify-center">
