@@ -9,25 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^15.3.3",
+    "@next/third-parties": "^15.4.6",
     "dayjs": "^1.11.13",
-    "motion": "^12.15.0",
-    "next": "15.3.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "motion": "^12.23.12",
+    "next": "15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "react-tailwindcss-datepicker": "^2.0.0",
     "use-local-storage-state": "^19.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@iconify/react": "^5.2.1",
-    "@tailwindcss/postcss": "^4.1.8",
-    "@types/node": "^20.17.57",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
-    "eslint": "^9.28.0",
-    "eslint-config-next": "15.3.3",
-    "tailwindcss": "^4.1.8",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^20.19.9",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "15.4.6",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
   },
   "packageManager": "yarn@4.9.1"
