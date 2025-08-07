@@ -7,10 +7,10 @@ import Achievement from "@/components/top/arch";
 
 export const metadata = {
   title: 'About CoreNion',
-  description: "CoreNion / Yuta Obara's profile page.",
+  description: "CoreNion's profile page.",
   openGraph: {
     title: 'About CoreNion',
-    description: "CoreNion / Yuta Obara's profile page.",
+    description: "CoreNion's profile page.",
     url: 'https://cnion.dev/',
     siteName: "CoreNion's Page",
     images: [
@@ -40,7 +40,6 @@ export default function Home() {
 
           <div className="h-full grid content-center gap-2 text-center">
             <h1 className="font-bold text-6xl">CoreNion</h1>
-            <h2 className="font-medium text-4xl">Yuta Obara</h2>
 
             <p className="font-light text-xl my-3">
               Student Programmer
@@ -63,9 +62,7 @@ export default function Home() {
 
       <section className="px-4 py-12 md:px-8 md:py-12 xl:py-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-8 max-w-[1400px] mx-auto">
         <div className="flex flex-col gap-2">
-          <h2 className="font-bold text-4xl">小原 悠太</h2>
-          <span className="text-xl">KADOKAWAドワンゴ情報工科学院<br />専門部所属 2年生 (3年制, 27卒)</span>
-          <span className="w-fit rounded-full border py-1 px-2">Web制作会社でアルバイト中</span>
+          <h2 className="font-bold font-mono text-4xl">About me...</h2>
 
           <p className="mt-4">
             物心付いた頃からパソコンに触れ、中学生の頃にはプログラミングに興味を持ち始めました。
@@ -77,10 +74,13 @@ export default function Home() {
             <br />
             現在は、主にWebアプリケーションの開発に興味を持ち、Next.jsやReactなどの勉強をしています。
           </p>
+
+          <span className="w-fit rounded-full border py-1 px-3">Web制作会社でアルバイト中</span>
         </div>
 
         <div className="grid gap-4">
-          <Achievement title={"Campus Dashboard"} description={"必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。\nキャンパスで使う時計やタイマーなどを、一つのサイトにまとめて使いやすくしたいと思い開発しました。"} url="https://cpd.cnion.dev/"
+          <h3 className="font-medium text-2xl"># 主な制作物</h3>
+          <Achievement title={"Campus Dashboard"} description={"必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。\n高校のキャンパスで使う時計やタイマーなどを、一つのサイトにまとめて使いやすくしたいと思い開発しました。"} url="https://cpd.cnion.dev/"
             icon={<Image src={"/cp-dashboard/icon.svg"} alt={"Campus Dashboardのアイコン"} width={"400"} height={"400"}></Image>}>
           </Achievement>
           <Achievement title={"Open FileTrucker"} description={"どんな端末でも使える、サーバーを介さないファイル共有アプリ。\n多デバイス間でのファイル共有に不便を感じたことから生まれました。"} url="/trucker"
@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pl-6 pr-4 py-12 md:p-12 bg-slate-900 text-white grid justify-center items-center">
+      <section className="pl-6 pr-4 py-12 md:p-12 bg-[#232F45] text-white grid justify-center items-center">
         <h2 className="font-bold text-4xl text-center">Timeline</h2>
 
         <ol className="relative border-l-4 border-green-200">
@@ -156,10 +156,11 @@ export default function Home() {
             <Link className="underline" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank" prefetch={false}>N高ブログでのインタビュー</Link>
           </Timeline>
           <Timeline className="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-300" />
-          <Timeline className="ml-4" time="Apr 2024" title="KADOKAWAドワンゴ情報工科学院(バンタングループ) 専門部に入学" color="bg-red-300">
-            高校卒業後は、より実践的なプログラミングを学ぼうと思い、KADOKAWAドワンゴ情報工科学院に進学しました。
+          <Timeline className="ml-4" time="Apr 2024" title="KADOKAWAドワンゴ情報工科学院 専門部に入学 (2027年3月卒業予定)" color="bg-red-300">
+            高校卒業後は、より実践的なプログラミングを学ぼうと思い、KADOKAWAドワンゴ情報工科学院(バンタングループ)の専門部(3年制)に進学しました。
             <br />
             また、この頃から、将来はWeb系のエンジニアとして働きたいと思うようになりました。
+            <br />
           </Timeline>
           <Timeline className="ml-4" time="Oct 2024" title="株式会社アストラザスタジオにアルバイト採用" color="bg-red-300">
             現在も学校に通いながら勤務しています。

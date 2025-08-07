@@ -5,10 +5,10 @@ import Account from "@/components/top/contact";
 
 export const metadata = {
   title: 'Accounts | CoreNion',
-  description: "CoreNion / Yuta Obaraの連絡先一覧ページ。",
+  description: "CoreNionの連絡先一覧ページ。",
   openGraph: {
     title: 'Accounts | CoreNion',
-    description: "CoreNion / Yuta Obaraの連絡先一覧ページ。",
+    description: "CoreNionの連絡先一覧ページ。",
     url: 'https://cnion.dev/accounts',
     siteName: "CoreNion's Page",
     images: [
