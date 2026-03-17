@@ -27,7 +27,7 @@ export default function RootLayout({ children, }: Readonly<{
 
         <footer className="p-4 bg-black text-white text-neutral-content grid grid-cols-[1fr_1fr]">
           <div>
-            <span>© 2025 CoreNion</span>
+            <span>© 2026 CoreNion</span>
             <br />
             <Link className="underline text-white mr-2" href="/privacy" target="_blank" prefetch={false}>Privacy</Link>
             <Link className="underline text-blue-200" href="https://github.com/CoreNion/page" target="_blank" prefetch={false}>Source Code</Link>

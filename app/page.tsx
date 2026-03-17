@@ -15,7 +15,7 @@ export const metadata = {
     siteName: "CoreNion's Page",
     images: [
       {
-        url: '/profile.png',
+        url: 'https://cnion.dev/profile.png',
         width: 1000,
         height: 1000,
         alt: "CoreNion's profile picture",
@@ -27,6 +27,7 @@ export const metadata = {
     card: 'summary',
     site: '@CoreiNion',
     creator: '@CoreiNion',
+    image: ['https://cnion.dev/profile.png'], 
   },
 };
 
@@ -34,7 +35,7 @@ export default function Home() {
   return (
     <main className="bg-white text-black">
       <section className="min-h-screen bg-[#232F45] text-white">
-        <div className={`min-h-screen mx-auto max-w-[1800px]
+        <div className={`min-h-screen mx-auto max-w-450
                          max-lg:flex max-lg:flex-col-reverse justify-center gap-4
                          max-lg:landscape:grid lg:grid grid-cols-2 grid-rows-1 items-center 2xl:landscape:items-end`}>
 
@@ -60,7 +61,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-12 md:px-8 md:py-12 xl:py-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-8 max-w-[1400px] mx-auto">
+      <section className="px-4 py-12 md:px-8 md:py-12 xl:py-24 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 max-w-350 mx-auto">
         <div className="flex flex-col gap-2">
           <h2 className="font-bold font-mono text-4xl">About me...</h2>
 
@@ -70,8 +71,6 @@ export default function Home() {
             高校生の頃は、日頃の生活の中で「あったらいいな」と思ったアイデアを、さまざまな技術を活用してカタチにすることに挑戦してきました。
           </p>
           <p>
-            専門学校に入学してからは、実務や学校での学びを通して、より実践的なスキルの習得に励んでいます。
-            <br />
             現在は、主にWebアプリケーションの開発に興味を持ち、Next.jsやReactなどの勉強をしています。
           </p>
 
@@ -80,14 +79,14 @@ export default function Home() {
 
         <div className="grid gap-4">
           <h3 className="font-medium text-2xl"># 主な制作物</h3>
+          <Achievement title={"Fare Map"} description={"駅の運賃表のように、各駅への運賃を地図上に表示するWebアプリ。\n現在は、JR東日本の首都圏の駅を対象に、選択された駅からの切符運賃を表示する機能を実装しています。"} url="https://fare.cnion.dev/"
+            icon={<Image src={"/fare/icon.svg"} alt={"Fare Mapのアイコン"} width={"400"} height={"400"}></Image>}>
+          </Achievement>
           <Achievement title={"Campus Dashboard"} description={"必要な情報を一目で確認できる、タイマー付きのダッシュボードサイト。\n高校のキャンパスで使う時計やタイマーなどを、一つのサイトにまとめて使いやすくしたいと思い開発しました。"} url="https://cpd.cnion.dev/"
             icon={<Image src={"/cp-dashboard/icon.svg"} alt={"Campus Dashboardのアイコン"} width={"400"} height={"400"}></Image>}>
           </Achievement>
           <Achievement title={"Open FileTrucker"} description={"どんな端末でも使える、サーバーを介さないファイル共有アプリ。\n多デバイス間でのファイル共有に不便を感じたことから生まれました。"} url="/trucker"
             icon={<Image src={"/trucker/icon.svg"} alt={"FileTruckerのアイコン"} width={"400"} height={"400"}></Image>}>
-          </Achievement>
-          <Achievement title={"Leasy"} description={"「あなただけの」使いやすい暗記帳で学習しよう。"} url="/leasy"
-            icon={<Image src={"/leasy/icon.svg"} alt={"Leasyのアイコン"} width={"400"} height={"400"}></Image>}>
           </Achievement>
         </div>
       </section>
@@ -156,23 +155,30 @@ export default function Home() {
             <Link className="underline" href="https://nnn.ed.jp/blog/archives/jp_hg75o5jt/" target="_blank" prefetch={false}>N高ブログでのインタビュー</Link>
           </Timeline>
           <Timeline className="ml-4" time="Mar 2024" title="N高等学校を卒業" color="bg-zinc-300" />
-          <Timeline className="ml-4" time="Apr 2024" title="KADOKAWAドワンゴ情報工科学院 専門部に入学 (2027年3月卒業予定)" color="bg-red-300">
+          <Timeline className="ml-4" time="Apr 2024" title="" color="bg-zinc-300">
             高校卒業後は、より実践的なプログラミングを学ぼうと思い、KADOKAWAドワンゴ情報工科学院(バンタングループ)の専門部(3年制)に進学しました。
             <br />
-            また、この頃から、将来はWeb系のエンジニアとして働きたいと思うようになりました。
-            <br />
+            しかし、入学時に想定していた環境や状況から大きくズレが生じてしまったことや、学習内容が自分の目指す方向性と合わないことなどから、2025年10月に退学しました。
           </Timeline>
           <Timeline className="ml-4" time="Oct 2024" title="株式会社アストラザスタジオにアルバイト採用" color="bg-red-300">
-            現在も学校に通いながら勤務しています。
+            現在も勤務しています。様々なWebサイトの制作のサポートを行っています。
+            <br />
+            <Link className="underline" href="https://www.studio.co.jp/" target="_blank" prefetch={false}>株式会社アストラザスタジオのホームページ</Link>
           </Timeline>
           <Timeline className="ml-4" time="Mar 2025" title="社内向けの出退勤管理Webアプリを開発">
             社内の出退勤管理をより簡単に行えるようにするために、Next.js / Reactを用いて開発しました。
             <br />
             静的なWebアプリとして開発し、データベースにはSqlite.wasmを使用しました。
           </Timeline>
-          <Timeline className="ml-4" time="Mar 2025" title="プロフィールサイトをNext.js / Reactに移行">
+          <Timeline className="mb-10 ml-4" time="Mar 2025" title="プロフィールサイトをNext.js / Reactに移行">
             サイトデザインのリニューアルも行いました。
           </Timeline>
+          <Timeline className="ml-4" time="Mar 2026 ~" title="Fare Mapをプレリリース">
+            JR東日本で運賃改定が行われることを背景に、各駅への運賃を駅の運賃表のように地図で手軽に確認できるようにしたいと思い、開発しました。
+            <br />
+            プレリリース時点では、JR東日本の首都圏の駅を中心に、切符運賃を地図上に表示する機能を実装しています。
+          </Timeline>
+          <Timeline className="ml-4" time="Apr 2026" title="Zen大学に入学予定" color="bg-red-300" />
         </ol>
       </section>
 
