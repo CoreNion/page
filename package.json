@@ -9,28 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "16.1.7",
+    "@next/third-parties": "16.2.6",
     "dayjs": "^1.11.20",
-    "motion": "^12.37.0",
-    "next": "16.1.7",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "motion": "^12.38.0",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
     "react-tailwindcss-datepicker": "^2.0.0",
     "use-local-storage-state": "^19.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@iconify/react": "^6.0.2",
-    "@tailwindcss/postcss": "^4.2.1",
-    "@types/node": "^20.19.37",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^20.19.41",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "^9.39.4",
-    "eslint-config-next": "16.1.7",
-    "tailwindcss": "^4.2.1",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4.3.0",
     "typescript": "^5.9.3"
   },
-  "packageManager": "yarn@4.9.1",
+  "packageManager": "yarn@v4.14.1+sha512.64df448055b2d37ba269d7db535a469b8da93f8ef1140c25fd7a83c00a8fbaacb214ca0e02553b92a2c54cef78bb67d0b4817fab02001df0e24fac0faccc3b42",
   "resolutions": {
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3"
